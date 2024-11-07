@@ -1,3 +1,3 @@
-# Data_mining_2023
+# Data_mining_2024
 
-Datasets and demos for data mining 2023
+Datasets and demos for data mining 2024
