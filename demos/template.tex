@@ -190,30 +190,33 @@
 %---------------------------------------------------------------------
 %  绪论
 %---------------------------------------------------------------------
-\chapter{第一次上机实验(提取图像的纹理特征)}
+\chapter{第一次上机实验（提取图像的纹理特征）}
 \section{实验要求}
 \begin{itemize}
-    \item 给定若干张图像，利用灰度共生矩阵特征或局部二值模式特征对这些图像进行特征提取
-    \item 图象是W * H * 3的矩阵
-    \item 将最终提取到的特征通过plot的形式展示，直观对比不同纹理提取到的特征
-    \item 使用Python编程实现
+    \item 给定若干张图像，利用灰度共生矩阵特征或局部二值模式特征对这些图像进行特征提取；
+    \item 图象是W * H * 3的矩阵；
+    \item 将最终提取到的特征通过plot的形式展示，直观对比不同纹理提取到的特征；
+    \item 使用Python编程实现。
 \end{itemize}
 \section{数据分析与处理}
-\par 将图像转化为灰度矩阵
+\par 将图像转化为灰度矩阵。
 \section{实验步骤与原理}
 \subsection{灰度共生矩阵}
-灰度共生矩阵是从$N\times N$的图像$f(x,y)$的灰度为$i$的像素出发，统计与距离为$\delta=(\mathrm{d}x^{2}+\mathrm{d}y^{2})^{1/2}$，灰度为$j$的像素同时出现的概率为,数学表达式为：$$P(i,j,\delta,\theta)=\left\{[(x,y),(x+\mathrm{d}x,y+\mathrm{d}y)]|f(x,y)=i,f(x+\mathrm{d}x,y+\mathrm{d}y)=j\right\}$$
-分别考虑$\theta=0^{\circ},45^{\circ},90^{\circ},135^{\circ}$，
+\par 灰度共生矩阵是从$N\times N$的图像$f(x,y)$的灰度为$i$的像素出发，统计与距离为$\delta=(\mathrm{d}x^{2}+\mathrm{d}y^{2})^{1/2}$，灰度为$j$的像素同时出现的概率为,数学表达式为：$$P(i,j,\delta,\theta)=\left\{[(x,y),(x+\mathrm{d}x,y+\mathrm{d}y)]|f(x,y)=i,f(x+\mathrm{d}x,y+\mathrm{d}y)=j\right\},$$
+\par 分别考虑$\theta=0^{\circ},45^{\circ},90^{\circ},135^{\circ}$，
 \par 当$\theta=0^{\circ}$时，$\mathrm{d}x=1,\mathrm{d}y=0$；
 \par 当$\theta=45^{\circ}$时，$\mathrm{d}x=1,\mathrm{d}y=-1$；
 \par 当$\theta=90^{\circ}$时，$\mathrm{d}x=0,\mathrm{d}y=-1$；
 \par 当$\theta=135^{\circ}$时，$\mathrm{d}x=-1,\mathrm{d}y=-1$。
 \subsection{局部二值模式}
-LBP算子定义为在3*3的窗口内，以窗口中心像素为阈值，将相邻的8个像素的灰度值与其进行比较，若周围像素值大于中心像素值，则该像素点的位置被标记为1，否则为0。这样，3*3邻域内的8个点经比较可产生8位二进制数（通常转换为十进制数即LBP码，共256种），即得到该窗口中心像素点的LBP值，并用这个值来反映该区域的纹理信息（例如亮点和暗点），数学表达式为：$$LBP=\sum_{p=0}^{P−1} s(g_p−g_c)\cdot 2^p,$$其中，
+\par LBP算子定义为在3*3的窗口内，以窗口中心像素为阈值，将相邻的8个像素的灰度值与其进行比较，若周围像素值大于中心像素值，则该像素点的位置被标记为1，否则为0。这样，3*3邻域内的8个点经比较可产生8位二进制数（通常转换为十进制数即LBP码，共256种），即得到该窗口中心像素点的LBP值，并用这个值来反映该区域的纹理信息（例如亮点和暗点），数学表达式为：
+$$LBP=\sum_{p=0}^{P−1} s(g_p−g_c)\cdot 2^p,$$
+\par 其中，
 
 \begin{itemize}
-    \item $s(x)$是符号函数：$$s(x)=\left\{ \begin{array}{rcl}1\quad x\ge 0\\0\quad x<0\end{array}\right.$$
-    \item P 是邻域像素数（通常为 8）
+    \item $s(x)$是符号函数：
+    $$s(x)=\left\{ \begin{array}{rcl}1\quad x\ge 0\\0\quad x<0\end{array}\right.,$$
+    \item P 是邻域像素数（通常为 8）。
 \end{itemize}
 \section{实验结果与分析}
 \par 通过两种方法下生成的\href{https://github.com/psa1K/Data_mining_2024/tree/main/datasets/exp1/output}{特征图}可以看出，两类图有明显不同的纹理特征。
@@ -229,7 +232,7 @@ mpl.rcParams["font.sans-serif"] = ["SimHei"]  # 中文
 plt.rcParams["axes.unicode_minus"] = False  # 正负号
 
 # 更改当前工作目录为脚本所在目录
-os.chdir(os.path.dirname(os.path.abspath(__file__)))  
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
 c_path = "./cloud/"
 f_path = "./forest/"
 
@@ -238,6 +241,7 @@ os.makedirs("./output/lbp/", exist_ok=True)
 
 c_name = [c_path + i for i in os.listdir(c_path)]
 f_name = [f_path + i for i in os.listdir(f_path)]
+
 
 def show_grey(root=c_name):
     for n, i in enumerate(c_name):
@@ -248,6 +252,7 @@ def show_grey(root=c_name):
         plt.axis("off")  # 不显示坐标轴
     plt.show()
 
+
 def get_mat(root):
     for n, i in enumerate(root):
         # plt.subplot(2, 5, n + 1)
@@ -256,10 +261,11 @@ def get_mat(root):
         img = np.array(img)  # 转为ndarray
         yield i, img
 
+
 # 计算灰度共生矩阵(gray-level co-occurrence matrix)
 def get_glcm(img, angle=0, distance=1, gray_levels=256):
     # 归一化到0-gray_levels灰度级
-    img = (img / (np.max(img) + 1e-5) * (gray_levels - 1)).astype(int)  
+    img = (img / (np.max(img) + 1e-5) * (gray_levels - 1)).astype(int)
     h, w = img.shape  # 获取图像的尺寸
     glcm = np.zeros((gray_levels, gray_levels), dtype=np.int64)
 
@@ -282,8 +288,9 @@ def get_glcm(img, angle=0, distance=1, gray_levels=256):
     glcm = glcm / np.sum(glcm)  # 归一化
     return glcm
 
+
 # 绘制灰度共生矩阵
-def get_glcm_fig(root, angles=[0, 90, 45, 135]):
+def get_glcm_fig(root, angles=[0, 45, 90, 135]):
     for i, img in get_mat(root):
         glcms = []  # 存储各角度的 GLCM 图像
         for angle in angles:
@@ -313,6 +320,7 @@ def get_glcm_fig(root, angles=[0, 90, 45, 135]):
             canvas.paste(glcm, (x_offset, y_offset + title_height))
 
         canvas.save(f"./output/glcm/{i}")
+
 
 # 计算局部二值模式(local binary pattern)
 def get_lbp(img):
@@ -345,23 +353,152 @@ def get_lbp_fig(root):
         lbp = get_lbp(img)
         Image.fromarray(lbp.astype(np.uint8)).save(f"./output/lbp/{i}")
 
+
 def main():
     roots = [c_name, f_name]
     for root in roots:
         get_glcm_fig(root)
         get_lbp_fig(root)
 
+
 if __name__ == "__main__":
     main()
 
 \end{lstlisting}
 \clearpage
-\chapter{第二次上机实验}
+\chapter{第二次上机实验（垂直平分分类器）}
 \section{实验要求}
+\begin{itemize}
+    \item 由\href{https://github.com/mercier111/Data_mining_2021/blob/main/data/2021_0325/data/train.txt}{训练数据}，训练一个垂直平分分类器
+    \item 对\href{https://github.com/mercier111/Data_mining_2021/blob/main/data/2021_0325/data/test.txt}{测试数据}进行分类
+    \item 使用Python编程实现
+\end{itemize}
 \section{数据分析与处理}
+\par 测试集与训练集均为已分类的二维数据。
 \section{实验步骤与原理}
+训练集中两类数据的均值分别为记为$m_{1}$和$m_{2}$，
+则垂直平分形式的线性分类器为
+$$g(\boldsymbol{x})=(m_{1})^{\prime}(\boldsymbol{x}-(m_{1}-m_{2})/2),$$
+\par 决策面方程为$$g(\boldsymbol{x})=0,$$
+\par 其中$\boldsymbol{x}$为向量。
+\par 当$g(\boldsymbol{x})>0$时，决策为“1”类，否则为“2”类。
 \section{实验结论与分析}
+\par 图~\ref{2.1} 展示了训练集与决策面的可视化图，图~\ref{2.2} 展示了测试集与决策面可视化图。
+\par 进而可以计算出模型的准确率（accuracy），精确率（precision）,召回率（recall）和 F1得分的值分别为99.25\%，99.00\%，99.50\%，99.25\%（保留两位小数）。说明模型的预测性能表现优异。
+\begin{figure}[htbp]
+    \centering
+    \begin{minipage}{0.42\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{../datasets/exp2/output/train.png}
+        \caption{训练集与决策面}
+        \label{2.1}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.42\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{../datasets/exp2/output/test.png}
+        \caption{测试集与决策面}
+        \label{2.2}
+    \end{minipage}
+    \label{fig:train_test_comparison}
+\end{figure}
 \section{实验代码}
+\begin{lstlisting}[language=Python]
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import matplotlib as mpl
+import os
+
+mpl.rcParams["font.sans-serif"] = ["SimHei"]  # 中文
+plt.rcParams["axes.unicode_minus"] = False  # 负号
+os.chdir(os.path.dirname(os.path.abspath(__file__)))  # 更改当前工作目录为脚本所在目录
+
+train_path = "data/train.txt"
+test_path = "data/test.txt"
+
+
+def train(data):
+    mean = data.groupby("Label").mean()
+    m_1 = mean.loc[1]
+    m_2 = mean.loc[2]
+    point = (m_1 + m_2) / 2
+    slope = m_1 - m_2
+    return point, slope
+
+
+def test(data, point, slope):
+    data["Predict"] = np.where(
+        (data.X - point.X) * slope.X + (data.Y - point.Y) * slope.Y > 0, 1, 2
+    )
+    data.to_csv("output/test_predict.csv")
+    return data
+
+
+def plot(data, point, slope, filename):
+    plt.axline(
+        point,
+        slope=-slope.X / slope.Y,
+        color="green",
+        linewidth=2,
+        linestyle="--",
+        label="Perpendicular Bisector Classifier",
+    )
+    color = ["r", "b"]
+    for _, i in data.iterrows():
+        x, y, c = i.iloc[0], i.iloc[1], color[int(i.iloc[2]) - 1]
+        plt.scatter(x, y, color=c)
+    plt.xlim(-8, 8)
+    plt.ylim(-8, 8)
+    plt.axis("off")
+    plt.savefig(filename, dpi=300, bbox_inches="tight")
+    # plt.show()
+    plt.close()
+
+
+def evaluate(data):
+    TP = 0
+    TN = 0
+    FP = 0
+    FN = 0
+    for _, i in data.iterrows():
+        if i.iloc[2] == i.iloc[3]:
+            if i.iloc[2] == 1:
+                TP += 1
+            else:
+                TN += 1
+        else:
+            if i.iloc[2] == 1:
+                FP += 1
+            else:
+                FN += 1
+    accuracy = (TP + TN) / (TP + TN + FP + FN)
+    precision = TP / (TP + FP)
+    recall = TP / (TP + FN)
+    F1 = 2 * precision * recall / (precision + recall)
+    print("accuracy:", accuracy)
+    print("precision:", precision)
+    print("recall:", recall)
+    print("F1 score:", F1)
+
+
+def main():
+    train_data = pd.read_csv(train_path, index_col=0)
+    test_data = pd.read_csv(test_path, index_col=0)
+    point, slope = train(train_data)
+    # 绘制测试集与决策界
+    plot(train_data, point, slope, "./output/train.png")
+    # 绘制训练集与决策界
+    plot(test_data, point, slope, "./output/test.png")
+    test_data = test(test_data, point, slope)
+    # 评估测试结果
+    evaluate(test_data)
+
+
+if __name__ == "__main__":
+    main()
+
+\end{lstlisting}
 \clearpage
 \chapter{第三次上机实验}
 \section{实验要求}

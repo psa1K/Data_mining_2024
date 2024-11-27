@@ -44,6 +44,7 @@ def plot(data, point, slope, filename):
         plt.scatter(x, y, color=c)
     plt.xlim(-8, 8)
     plt.ylim(-8, 8)
+    plt.axis("off")
     plt.savefig(filename, dpi=300, bbox_inches="tight")
     # plt.show()
     plt.close()
