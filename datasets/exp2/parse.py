@@ -17,13 +17,13 @@ def train(data):
     m_1 = mean.loc[1]
     m_2 = mean.loc[2]
     point = (m_1 + m_2) / 2
-    slope = -(m_1 - m_2).X / (m_1 - m_2).Y
+    slope = m_1 - m_2
     return point, slope
 
 
 def test(data, point, slope):
     data["Predict"] = np.where(
-        (data.X - point.X) * slope - (data.Y - point.Y) > 0, 2, 1
+        (data.X - point.X) * slope.X + (data.Y - point.Y) * slope.Y > 0, 1, 2
     )
     data.to_csv("output/test_predict.csv")
     return data
@@ -32,7 +32,7 @@ def test(data, point, slope):
 def plot(data, point, slope, filename):
     plt.axline(
         point,
-        slope=slope,
+        slope=-slope.X / slope.Y,
         color="green",
         linewidth=2,
         linestyle="--",
@@ -84,7 +84,8 @@ def main():
     # 绘制训练集与决策界
     plot(test_data, point, slope, "./output/test.png")
     test_data = test(test_data, point, slope)
-    # evaluate(test_data)
+    # 评估测试结果
+    evaluate(test_data)
 
 
 if __name__ == "__main__":
