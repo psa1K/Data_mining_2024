@@ -369,9 +369,9 @@ if __name__ == "__main__":
 \chapter{第二次上机实验（垂直平分分类器）}
 \section{实验要求}
 \begin{itemize}
-    \item 由\href{https://github.com/mercier111/Data_mining_2021/blob/main/data/2021_0325/data/train.txt}{训练数据}，训练一个垂直平分分类器
-    \item 对\href{https://github.com/mercier111/Data_mining_2021/blob/main/data/2021_0325/data/test.txt}{测试数据}进行分类
-    \item 使用Python编程实现
+    \item 由\href{https://github.com/mercier111/Data_mining_2021/blob/main/data/2021_0325/data/train.txt}{训练数据}，训练一个垂直平分分类器；
+    \item 对\href{https://github.com/mercier111/Data_mining_2021/blob/main/data/2021_0325/data/test.txt}{测试数据}进行分类；
+    \item 使用Python编程实现。
 \end{itemize}
 \section{数据分析与处理}
 \par 测试集与训练集均为已分类的二维数据。
@@ -379,12 +379,11 @@ if __name__ == "__main__":
 训练集中两类数据的均值分别为记为$m_{1}$和$m_{2}$，
 则垂直平分形式的线性分类器为
 $$g(\boldsymbol{x})=(m_{1})^{\prime}(\boldsymbol{x}-(m_{1}-m_{2})/2),$$
-\par 决策面方程为$$g(\boldsymbol{x})=0,$$
-\par 其中$\boldsymbol{x}$为向量。
+决策面方程为$$g(\boldsymbol{x})=0,$$
+其中$\boldsymbol{x}$为向量。
 \par 当$g(\boldsymbol{x})>0$时，决策为“1”类，否则为“2”类。
 \section{实验结论与分析}
-\par 图~\ref{2.1} 展示了训练集与决策面的可视化图，图~\ref{2.2} 展示了测试集与决策面可视化图。
-\par 进而可以计算出模型的准确率（accuracy），精确率（precision）,召回率（recall）和 F1得分的值分别为99.25\%，99.00\%，99.50\%，99.25\%（保留两位小数）。说明模型的预测性能表现优异。
+\par 图~\ref{2.1} 展示了训练集与决策面的可视化图，图~\ref{2.2} 展示了测试集与决策面可视化图。进而可以计算出模型的准确率（accuracy），精确率（precision）,召回率（recall）和 F1得分的值分别为99.25\%，99.00\%，99.50\%，99.25\%（保留两位小数）。说明模型的预测性能表现优异。
 \begin{figure}[htbp]
     \centering
     \begin{minipage}{0.42\textwidth}
@@ -500,19 +499,265 @@ if __name__ == "__main__":
 
 \end{lstlisting}
 \clearpage
-\chapter{第三次上机实验}
+\chapter{第三次上机实验（使用朴素贝叶斯方法进行预测）}
 \section{实验要求}
+\begin{itemize}
+    \item 给定一定时间内的犯罪数据集，使用朴素贝叶斯方法进行犯罪类型预测；
+    \item 使用Python编程实现。
+\end{itemize}
 \section{数据分析与处理}
+\label{3.2}
+\par 原始数据包括Dates, Category, Descript, DayOfWeek, PdDistrict。其中Category是我们要尽心预测的对象，我们对其进行编码，然后我们对Dates, DayOfWeek, PdDistrict进行one-hot编码，利用TD-IDF特征从Descript中提取关键词并进行编码。
 \section{实验步骤与原理}
+\par 给定特征 $\boldsymbol{x}=(x_{1},x_{2},\cdots,x_{n})$和类别$\boldsymbol{v}=(v_{1},v_{2},\cdots,v_{m})$。在分类任务中，我们想要找到使得$P(v|\boldsymbol{x})$最大的$v$。利用贝叶斯公式
+$$P(v|\boldsymbol{x})=\frac{P(\boldsymbol{x}|v)P(v)}{P(\boldsymbol{x})},$$
+又$P(x)$为定值，则我们比较$P(\boldsymbol{x}|v)P(v)$即可。
+\par 在朴素贝叶斯中，我们假设特征$x_{1},x_{2},\cdots,x_{n}$之间是相互独立的，即
+$$
+P(\boldsymbol{x}|v)=\prod_{i=1}^{n}P(x_{i}|v).
+$$
+\par 则使得$P(v|\boldsymbol{x})$最大的
+$$
+v=\mathop{\arg\max}\limits_{v_{j}}P(v_{j})\prod_{i=1}^{n}P(x_{i}|v_{j})
+$$
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\textwidth]{../datasets/exp3/accuracy.png}
+    \caption{测试集上的准确率与关键词个数关系图}
+    \label{3.1}
+    \hfill
+\end{figure}
 \section{实验结论与分析}
+\par 根据TF-IDF值对每一个Descript选取一个关键词，选取出现频率最高的k个关键词进行模型拟合，在测试集上的准确率如图~\ref{3.1} 所示。为了防止模型过拟合并保证其泛化能力，选取频率最高的前5个关键词。
+\par 考虑测试集和训练集Category中DRUG/NARCOTIC类数据分别占据90.79\%和89.81\%，为不均衡数据，本实验模型的分类正确率达到了97.16\%，效果较好。
 \section{实验代码}
+\begin{lstlisting}[language=Python]
+import os
+import pandas as pd
+from sklearn import preprocessing
+from sklearn.naive_bayes import BernoulliNB
+from sklearn.metrics import accuracy_score
+from sklearn.feature_extraction.text import TfidfVectorizer
+import matplotlib.pyplot as plt
+
+os.chdir(os.path.dirname(os.path.abspath(__file__)))  # 更改当前工作目录为脚本所在目录
+
+train_path = "train.csv"
+test_path = "test.csv"
+
+
+def keyword_extract(path="train.csv"):
+    df = pd.read_csv(path)
+    vectorizer = TfidfVectorizer(stop_words="english", token_pattern=r"(?u)\b\w+\b")
+    tfidf = pd.DataFrame(
+        vectorizer.fit_transform(df["Descript"]).toarray(),
+        columns=vectorizer.get_feature_names_out(),
+    )
+    keywords = tfidf.idxmax(axis=1)
+    keywords = keywords.value_counts(normalize=True).index.str.upper().tolist()
+    return keywords
+
+
+def Pre_Process(path, keywords):
+    df = pd.read_csv(path)
+
+    # 将Category进行整数编码
+    encoder = preprocessing.LabelEncoder()
+    crime_type_encode = encoder.fit_transform(df["Category"])
+
+    # 将时间进行one-hot编码
+    hour = pd.to_datetime(df["Dates"]).dt.hour
+    hour = pd.get_dummies(hour)
+    day = pd.get_dummies(df["DayOfWeek"])
+
+    # 将所属警区进行one-hot编码
+    police_district = pd.get_dummies(df["PdDistrict"])
+
+    # 利用 TF-IDF 特征进行编码
+    matrix = pd.DataFrame(0, index=df.index, columns=keywords)
+    for keyword in keywords:
+        matrix[keyword] = df["Descript"].apply(
+            lambda x: True if keyword in x else False
+        )
+
+    # 将特征合并
+    data = pd.concat([hour, day, police_district, matrix], axis=1)
+    data["Crime type"] = crime_type_encode
+
+    # Feature names are only supported if all input features have string names
+    data.columns = data.columns.astype(str)
+    return data
+
+
+keywords = keyword_extract()
+acc = []
+for k in range(0, len(keywords) + 1):
+    train = Pre_Process(train_path, keywords[:k])
+    test = Pre_Process(test_path, keywords[:k])
+    # 训练模型
+    model = BernoulliNB()
+    model.fit(train.drop("Crime type", axis=1), train["Crime type"])
+
+    # 预测结果
+    pred = model.predict(test.drop("Crime type", axis=1))
+    acc.append(
+        accuracy_score(test["Crime type"], pred),
+    )
+
+# plot
+plt.plot(range(0, len(keywords) + 1), acc, color="b")
+plt.xlabel("Number of Keywords")
+plt.ylabel("Accuracy")
+points = [(0, acc[0]), (5, acc[5]), (len(acc), acc[len(acc) - 1])]
+xticks = [x for x, _ in points]
+yticks = [y for _, y in points]
+plt.xticks(xticks, [f"{x}" for x in xticks])
+plt.yticks(yticks, [f"{y * 100:.2f}%" for y in yticks])
+plt.plot([points[1][0], points[1][0]], [0.90, points[1][1]], color="r", linestyle="--")
+plt.plot([0.00, points[1][0]], [points[1][1], points[1][1]], color="r", linestyle="--")
+plt.xlim(0, len(keywords) + 1)
+plt.ylim(0.90, 1.01)
+# plt.show()
+plt.savefig("accuracy.png", bbox_inches="tight")
+\end{lstlisting}
 \clearpage
-\chapter{第四次上机实验}
+\chapter{第四次上机实验（使用决策树进行预测）}
 \section{实验要求}
+\begin{itemize}
+    \item 给定一定时间内的犯罪数据集，使用决策树方法进行犯罪类型预测；
+    \item 使用Python编程实现。
+\end{itemize}
 \section{数据分析与处理}
+\par 同~\ref{3.2}\ 节。
 \section{实验步骤与原理}
+\par 本试验采用CART算法，其不纯度（Gini系数）定义如下：
+$$
+\mathrm{Gini}=1-\sum_{i=1}^{N}p_{i}^{2},
+$$
+其中$p_{i}$是每个类$i$的概率，$N$是类别总数。信息增益定义为依某个特征进行分类前后的不纯度之差，选择使得信息增益最高的特征。
 \section{实验结论与分析}
+\par 根据TF-IDF值对每一个Descript选取一个关键词，选取出现频率最高的k个关键词进行模型拟合，在测试集上的准确率如图~\ref{4.1} 所示。可以看出决策树的训练与大部分频率较高的关键词并无较大帮助，部分频率较低的关键词反而可以很好地减少决策树的深度。我们选取所有关键词进行模型训练，最终决策树如图~\ref{4.2}，训练集上的准确率达到了100\%。
+\begin{figure}[htbp]
+    \centering
+    \begin{minipage}{0.42\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{../datasets/exp4/accuracy+depth.png}
+        \caption{决策树深度和测试集上的准确率和与关键词个数关系图}
+        \label{4.1}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.42\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{../datasets/exp4/decision_tree.png}
+        \caption{决策树可视化图(Depth=7)}
+        \label{4.2}
+    \end{minipage}
+    \label{fig:train_test_comparison}
+\end{figure}
 \section{实验代码}
+\begin{lstlisting}[language=Python]
+import os
+import pandas as pd
+import matplotlib.pyplot as plt
+from sklearn import preprocessing
+from sklearn.metrics import accuracy_score
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.tree import DecisionTreeClassifier, plot_tree
+
+
+os.chdir(os.path.dirname(os.path.abspath(__file__)))  # 更改当前工作目录为脚本所在目录
+
+train_path = "train.csv"
+test_path = "test.csv"
+
+
+def keyword_extract(path="train.csv"):
+    df = pd.read_csv(path)
+    vectorizer = TfidfVectorizer(stop_words="english", token_pattern=r"(?u)\b\w+\b")
+    tfidf = pd.DataFrame(
+        vectorizer.fit_transform(df["Descript"]).toarray(),
+        columns=vectorizer.get_feature_names_out(),
+    )
+    keywords = tfidf.idxmax(axis=1)
+    keywords = keywords.value_counts(normalize=True).index.str.upper().tolist()
+    return keywords
+
+
+def Pre_Process(path, keywords):
+    df = pd.read_csv(path)
+
+    # 将Category进行整数编码
+    encoder = preprocessing.LabelEncoder()
+    crime_type_encode = encoder.fit_transform(df["Category"])
+
+    # 将时间进行one-hot编码
+    hour = pd.to_datetime(df["Dates"]).dt.hour
+    hour = pd.get_dummies(hour)
+    day = pd.get_dummies(df["DayOfWeek"])
+
+    # 将所属警区进行one-hot编码
+    police_district = pd.get_dummies(df["PdDistrict"])
+
+    # 利用 TF-IDF 特征进行编码
+    matrix = pd.DataFrame(0, index=df.index, columns=keywords)
+    for keyword in keywords:
+        matrix[keyword] = df["Descript"].apply(
+            lambda x: True if keyword in x else False
+        )
+
+    # 将特征合并
+    data = pd.concat([hour, day, police_district, matrix], axis=1)
+    data["Crime type"] = crime_type_encode
+
+    # Feature names are only supported if all input features have string names
+    data.columns = data.columns.astype(str)
+    return data
+
+
+keywords = keyword_extract()
+acc = []
+depth = []
+for k in range(0, len(keywords) + 1):
+    train = Pre_Process(train_path, keywords[:k])
+    test = Pre_Process(test_path, keywords[:k])
+    # 训练模型
+    model = DecisionTreeClassifier()
+    model.fit(train.drop("Crime type", axis=1), train["Crime type"])
+    # 预测结果
+    y_pred = model.predict(test.drop("Crime type", axis=1))
+    acc.append(accuracy_score(test["Crime type"], y_pred))
+    depth.append(model.get_depth())
+
+# plot
+fig, ax1 = plt.subplots()
+ax1.set_xlabel("Number of Keywords")
+ax1.set_ylabel("Accuracy")
+ax1.plot(range(0, len(keywords) + 1), acc, color="r", label="Accuracy")
+ax1.tick_params(axis="y")
+# 创建第二个坐标轴共享x轴
+ax2 = ax1.twinx()
+ax2.set_ylabel("Depth")
+ax2.plot(range(0, len(keywords) + 1), depth, color="b", label="Depth")
+ax2.tick_params(axis="y")
+# 显示图例
+lines, labels = ax1.get_legend_handles_labels()
+lines2, labels2 = ax2.get_legend_handles_labels()
+ax1.legend(lines + lines2, labels + labels2, loc="upper left")
+# plt.show()
+plt.savefig("accuracy+depth.png")
+# 绘制决策树
+
+plt.figure(figsize=(10, 10))
+plot_tree(
+    model,
+    filled=True,
+    rounded=True,
+    class_names=list(pd.read_csv(train_path)["Category"].unique()),
+    feature_names=list(train.drop("Crime type", axis=1).columns),
+)
+plt.savefig("decision_tree.png")
+
+\end{lstlisting}
 \clearpage
 \chapter{第五次上机实验}
 \section{实验要求}
