@@ -167,7 +167,7 @@
     {\makebox[4\ccwd][s]{专\qquad 业：\qquad 统\quad 计\quad 学}} & ~\kaishu   \\
     %{\makebox[4\ccwd][s]{授课教师：}}  & ~\kaishu xxx~教授\\ 
     %{\makebox[4\ccwd][s]{课程助教：}} & ~\kaishu xxx~xxx \\
-    {\makebox[4\ccwd][s]{完成日期：}}  & ~\kaishu\quad2\ 0\ 2\ 4年\ 1\ 1月\ 1\ 7日\\ 
+    {\makebox[4\ccwd][s]{完成日期：}}  & ~\kaishu\quad2\ 0\ 2\ 4年\ 1\ 2月\ 2\ 0日\\ 
 
 \end{tabular}
  }\\[2cm]
@@ -759,12 +759,144 @@ plt.savefig("decision_tree.png")
 
 \end{lstlisting}
 \clearpage
-\chapter{第五次上机实验}
+\chapter{第五次上机实验（信用卡欺诈预测）}
 \section{实验要求}
+\begin{itemize}
+    \item 给定信用卡欺诈数据集，判断是否存在欺诈
+    \item 请使用BP神经网络或基于delta准则的感知机实现
+\end{itemize}
 \section{数据分析与处理}
+\par 测试集和训练集均已划分好，包括进行PCA处理后的30个特征，对其进行归一化处理。
 \section{实验步骤与原理}
+\par 本实验采用BP神经网络，Input layer是一个30维的数据，Hidden layer设定为30维，Output layer为2维标签数据，激活函数为sigmoid函数。
+\par 梯度下降法则为：
+$$
+\Delta w=-\eta \bigtriangledown E(w)
+$$
+其中$w$为模型参数，$\eta$为学习率，$\bigtriangledown$为梯度算子，$E$为总偏差。
+\par 下面我们利用反向传播，来计算$\bigtriangledown E(w)$。总偏差定义为
+\begin{equation}\label{eqn-1} 
+  E=\frac{1}{2}\sum_{c}\sum_{j}(y_{j,c}-d_{j,c})^{2}
+\end{equation}
+其中$c$是案例(输入-输出对)的索引, $j$是输出单元的索引, $y$是输出单元的实际值而$d$是目标值. 我们的*目标*变为寻找$\mathrm{argmin}_{w}E$.
+不失一般性, 我们考虑单元$j$的输入$x_{j}$与输出$y_{j}$, 总输入$x_{j}$定义为下层单元输出值的线性函数:
+\begin{equation}\label{eqn-2} 
+  x_{j}=\sum_{i}y_{i}w_{ji}
+\end{equation}
+其中$y_{i}$为第$i$个单元的输出, $w_{ji}$表示连接第$i$个单元到第$j$个单元的参数.
+每个单元都有其输出值, 通过非线性函数$\mathrm{Sigmoid}$函数定义
+\begin{equation}\label{eqn-3} 
+  y_{j}=\frac{1}{1+\mathrm{e}^{-x_{j}}}
+\end{equation}
+按照反向传播的定义, 我们对$E$关于$y$求偏导. 固定~\ref{eqn-1}\ 中的$c$, 对单元$j$的输出$y_{j}$求偏导
+\begin{equation}\label{eqn-4} 
+  \frac{\partial E}{\partial y_{j}}=y_{j}-d_{j}
+\end{equation}
+再对$x_{j}$求偏导
+\begin{equation}\label{eqn-5} 
+  \frac{\partial y_{j}}{x_{j}}=y_{j}(1-y_{j})
+\end{equation}
+对~\ref{eqn-4}\ 与~\ref{eqn-5}\ 应用链式法则
+\begin{equation}\label{eqn-6} 
+  \frac{\partial E}{\partial x_{j}}=\frac{\partial E}{\partial y_{j}}\cdot\frac{\partial y_{j}}{\partial x_{j}}=(y_{j}-d_{j})\cdot y_{j}(1-y_{j})
+\end{equation}
+再次利用链式法则与~\ref{eqn-2}\ 对$w_{ji}$求偏导
+\begin{equation}\label{eqn-7} 
+  \frac{\partial E}{\partial w_{ji}}=\frac{\partial E}{\partial x_{j}}\cdot\frac{\partial x_{j}}{w_{ji}}=\frac{\partial E}{\partial x_{j}}\cdot y_{i}
+\end{equation}
 \section{实验结论与分析}
+\par 本实验的准确率为99.20\%，AUC值为0.9038（见图~\ref{5.1}），可以认为模型分类效果优秀。
+\begin{figure}[hbp]
+    \centering
+    \includegraphics[width=0.65\textwidth]{../datasets/exp5/auc.png}
+    \caption{Recall-Precision曲线图}
+    \label{5.1}
+    \hfill
+\end{figure}
 \section{实验代码}
+\begin{lstlisting}[language=Python]
+import os
+import pandas as pd
+import torch
+import torch.nn as nn
+import matplotlib.pyplot as plt
+from sklearn.preprocessing import StandardScaler
+from sklearn.metrics import precision_recall_curve, auc
+
+os.chdir(os.path.dirname(os.path.abspath(__file__)))  # 更改当前工作目录为脚本所在目录
+train_path = "train.csv"
+test_path = "test.csv"
+
+train = pd.read_csv(train_path, index_col=0)
+test = pd.read_csv(test_path, index_col=0)
+
+
+def Pre_process(path):
+    data = pd.read_csv(path, index_col=0)
+    X = data.drop("Class", axis=1).values
+    y = data["Class"].values
+    X = scaler.fit_transform(X)
+    X = torch.from_numpy(X).float()
+    y = torch.from_numpy(y).long()
+    return X, y
+
+
+class BpNet(nn.Module):
+    def __init__(self, input_dim, hidden_dim, output_dim):
+        super(BpNet, self).__init__()
+        self.fc1 = nn.Linear(input_dim, hidden_dim)
+        self.fc2 = nn.Linear(hidden_dim, output_dim)
+        self.sigmoid = nn.Sigmoid()
+
+    def forward(self, x):
+        x = self.sigmoid(self.fc1(x))
+        x = self.fc2(x)
+        return x
+
+
+scaler = StandardScaler()
+X_train, y_train = Pre_process(train_path)
+X_test, y_test = Pre_process(test_path)
+
+seed = 233
+epochs = 100
+torch.manual_seed(seed)
+model = BpNet(input_dim=X_train.shape[1], hidden_dim=30, output_dim=2)
+criterion = nn.CrossEntropyLoss()
+optimizer = torch.optim.Adam(model.parameters(), lr=0.01)
+
+for epoch in range(epochs):
+    model.train()
+    optimizer.zero_grad()
+    output = model(X_train)
+    loss = criterion(output, y_train)
+    loss.backward()
+    optimizer.step()
+    if epoch % 10 == 0:
+        print("Epoch: {}/{}, Loss: {:.4f}".format(epoch + 1, epochs, loss.item()))
+
+model.eval()
+with torch.no_grad():
+    output = model(X_test)
+    pred = output.argmax(dim=1, keepdim=True)
+    correct = pred.eq(y_test.view_as(pred)).sum().item()
+    print("Accuracy: {:.2f}%".format(correct / len(y_test) * 100))
+
+# AUC
+y_score = output[:, 1].numpy()
+precision, recall, _ = precision_recall_curve(y_test.numpy(), y_score)
+area = auc(recall, precision)
+print("AUC: {:.4f}".format(area))
+
+# plot auc
+plt.plot(recall, precision, label="AUC={:.4f}".format(area), color="b")
+plt.xlabel("Recall")
+plt.ylabel("Precision")
+plt.legend(loc="best")
+# plt.show()
+plt.savefig("auc.png")
+
+\end{lstlisting}
 \printbibliography
 
 \end{document}
