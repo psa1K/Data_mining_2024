@@ -1,0 +1,6 @@
+aircraft_410.jpg	aircraft	238	317	307	365
+aircraft_410.jpg	aircraft	583	431	639	478
+aircraft_410.jpg	aircraft	627	470	684	520
+aircraft_410.jpg	aircraft	694	589	760	650
+aircraft_410.jpg	aircraft	750	641	814	710
+aircraft_410.jpg	aircraft	876	265	927	321

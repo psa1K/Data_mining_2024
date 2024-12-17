@@ -1,0 +1,4 @@
+aircraft_742.jpg	aircraft	531	280	589	339
+aircraft_742.jpg	aircraft	867	28	913	73
+aircraft_742.jpg	aircraft	499	690	592	759
+aircraft_742.jpg	aircraft	43	367	112	420

@@ -1,0 +1,3 @@
+aircraft_345.jpg	aircraft	206	452	293	530
+aircraft_345.jpg	aircraft	226	485	317	566
+aircraft_345.jpg	aircraft	814	299	898	365

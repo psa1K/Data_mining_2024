@@ -1,0 +1,8 @@
+aircraft_504.jpg	aircraft	46	72	84	108
+aircraft_504.jpg	aircraft	117	263	173	322
+aircraft_504.jpg	aircraft	213	301	267	355
+aircraft_504.jpg	aircraft	370	342	432	400
+aircraft_504.jpg	aircraft	335	148	362	174
+aircraft_504.jpg	aircraft	560	257	646	317
+aircraft_504.jpg	aircraft	880	266	934	309
+aircraft_504.jpg	aircraft	768	454	856	524

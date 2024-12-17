@@ -1,0 +1,6 @@
+aircraft_145.jpg	aircraft	330	255	372	288
+aircraft_145.jpg	aircraft	337	219	379	252
+aircraft_145.jpg	aircraft	336	178	387	216
+aircraft_145.jpg	aircraft	349	132	397	165
+aircraft_145.jpg	aircraft	361	87	402	129
+aircraft_145.jpg	aircraft	361	42	406	87

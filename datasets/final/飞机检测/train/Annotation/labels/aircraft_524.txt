@@ -1,0 +1,14 @@
+aircraft_524.jpg	aircraft	148	76	214	125
+aircraft_524.jpg	aircraft	62	168	104	199
+aircraft_524.jpg	aircraft	20	252	69	286
+aircraft_524.jpg	aircraft	60	291	108	335
+aircraft_524.jpg	aircraft	108	261	168	320
+aircraft_524.jpg	aircraft	139	376	192	425
+aircraft_524.jpg	aircraft	218	530	270	580
+aircraft_524.jpg	aircraft	277	470	341	546
+aircraft_524.jpg	aircraft	364	365	431	417
+aircraft_524.jpg	aircraft	349	264	438	335
+aircraft_524.jpg	aircraft	355	181	450	251
+aircraft_524.jpg	aircraft	556	183	644	254
+aircraft_524.jpg	aircraft	799	301	883	362
+aircraft_524.jpg	aircraft	965	312	1023	370

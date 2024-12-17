@@ -1,0 +1,11 @@
+aircraft_583.jpg	aircraft	323	523	369	563
+aircraft_583.jpg	aircraft	393	471	428	502
+aircraft_583.jpg	aircraft	364	415	388	439
+aircraft_583.jpg	aircraft	398	422	428	444
+aircraft_583.jpg	aircraft	451	376	474	391
+aircraft_583.jpg	aircraft	459	400	487	428
+aircraft_583.jpg	aircraft	501	397	520	417
+aircraft_583.jpg	aircraft	494	419	515	438
+aircraft_583.jpg	aircraft	468	435	495	458
+aircraft_583.jpg	aircraft	439	453	474	479
+aircraft_583.jpg	aircraft	677	599	742	637

@@ -1,0 +1,2 @@
+aircraft_220.jpg	aircraft	660	588	781	700
+aircraft_220.jpg	aircraft	316	297	402	376

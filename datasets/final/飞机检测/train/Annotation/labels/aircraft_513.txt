@@ -1,0 +1,13 @@
+aircraft_513.jpg	aircraft	35	73	91	125
+aircraft_513.jpg	aircraft	125	86	176	135
+aircraft_513.jpg	aircraft	202	92	251	143
+aircraft_513.jpg	aircraft	243	184	301	238
+aircraft_513.jpg	aircraft	77	449	196	561
+aircraft_513.jpg	aircraft	304	650	432	774
+aircraft_513.jpg	aircraft	382	411	493	510
+aircraft_513.jpg	aircraft	409	314	537	408
+aircraft_513.jpg	aircraft	574	168	633	225
+aircraft_513.jpg	aircraft	751	184	855	281
+aircraft_513.jpg	aircraft	872	223	935	279
+aircraft_513.jpg	aircraft	811	405	881	470
+aircraft_513.jpg	aircraft	785	495	891	588

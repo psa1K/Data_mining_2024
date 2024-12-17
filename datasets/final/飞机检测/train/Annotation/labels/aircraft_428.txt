@@ -1,0 +1,10 @@
+aircraft_428.jpg	aircraft	289	663	363	729
+aircraft_428.jpg	aircraft	345	609	384	643
+aircraft_428.jpg	aircraft	375	513	448	568
+aircraft_428.jpg	aircraft	415	465	468	504
+aircraft_428.jpg	aircraft	502	306	555	348
+aircraft_428.jpg	aircraft	573	180	630	217
+aircraft_428.jpg	aircraft	595	142	654	177
+aircraft_428.jpg	aircraft	618	108	670	142
+aircraft_428.jpg	aircraft	637	75	691	106
+aircraft_428.jpg	aircraft	961	18	1008	52

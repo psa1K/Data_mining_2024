@@ -1,0 +1,8 @@
+aircraft_348.jpg	aircraft	517	342	585	403
+aircraft_348.jpg	aircraft	600	391	639	428
+aircraft_348.jpg	aircraft	661	377	728	446
+aircraft_348.jpg	aircraft	729	415	784	469
+aircraft_348.jpg	aircraft	749	352	800	396
+aircraft_348.jpg	aircraft	765	389	815	438
+aircraft_348.jpg	aircraft	875	388	931	438
+aircraft_348.jpg	aircraft	924	487	953	508

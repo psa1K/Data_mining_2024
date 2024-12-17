@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotation>
+	<source>
+		<image>optic rs image</image>
+		<annotation>Lmars RSDS2016</annotation>
+		<flickrid>0</flickrid>
+		<database>Lmars Detection Dataset of RS</database>
+	</source>
+	<object>
+		<bndbox>
+			<xmin>160</xmin>
+			<ymin>340</ymin>
+			<ymax>418</ymax>
+			<xmax>244</xmax>
+		</bndbox>
+		<difficult>0</difficult>
+		<pose>Left</pose>
+		<name>aircraft</name>
+		<truncated>1</truncated>
+	</object>
+	<object>
+		<bndbox>
+			<xmin>154</xmin>
+			<ymin>552</ymin>
+			<ymax>604</ymax>
+			<xmax>226</xmax>
+		</bndbox>
+		<difficult>0</difficult>
+		<pose>Left</pose>
+		<name>aircraft</name>
+		<truncated>1</truncated>
+	</object>
+	<object>
+		<bndbox>
+			<xmin>451</xmin>
+			<ymin>231</ymin>
+			<ymax>304</ymax>
+			<xmax>552</xmax>
+		</bndbox>
+		<difficult>0</difficult>
+		<pose>Left</pose>
+		<name>aircraft</name>
+		<truncated>1</truncated>
+	</object>
+	<object>
+		<bndbox>
+			<xmin>925</xmin>
+			<ymin>127</ymin>
+			<ymax>151</ymax>
+			<xmax>951</xmax>
+		</bndbox>
+		<difficult>0</difficult>
+		<pose>Left</pose>
+		<name>aircraft</name>
+		<truncated>1</truncated>
+	</object>
+	<filename>aircraft_743.jpg</filename>
+	<segmented>0</segmented>
+	<owner>
+		<name>Lmars, Wuhan University</name>
+		<flickrid>I do not know</flickrid>
+	</owner>
+	<folder>RSDS2016</folder>
+	<size>
+		<width>1044</width>
+		<depth>3</depth>
+		<height>915</height>
+	</size>
+</annotation>

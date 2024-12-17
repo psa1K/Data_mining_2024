@@ -1,0 +1,15 @@
+aircraft_401.jpg	aircraft	732	12	772	35
+aircraft_401.jpg	aircraft	721	45	771	70
+aircraft_401.jpg	aircraft	657	153	685	174
+aircraft_401.jpg	aircraft	664	176	693	194
+aircraft_401.jpg	aircraft	604	173	634	193
+aircraft_401.jpg	aircraft	607	216	642	239
+aircraft_401.jpg	aircraft	622	246	642	264
+aircraft_401.jpg	aircraft	646	230	674	253
+aircraft_401.jpg	aircraft	663	214	693	237
+aircraft_401.jpg	aircraft	703	208	731	228
+aircraft_401.jpg	aircraft	759	368	815	407
+aircraft_401.jpg	aircraft	600	432	674	478
+aircraft_401.jpg	aircraft	607	541	688	596
+aircraft_401.jpg	aircraft	848	549	903	601
+aircraft_401.jpg	aircraft	275	742	336	827

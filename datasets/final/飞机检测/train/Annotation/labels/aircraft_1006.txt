@@ -1,0 +1,3 @@
+aircraft_1006.jpg	aircraft	346	30	399	81
+aircraft_1006.jpg	aircraft	390	189	432	223
+aircraft_1006.jpg	aircraft	562	729	627	811

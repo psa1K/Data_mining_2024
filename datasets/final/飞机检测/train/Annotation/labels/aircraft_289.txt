@@ -1,0 +1,8 @@
+aircraft_289.jpg	aircraft	462	229	525	298
+aircraft_289.jpg	aircraft	288	312	353	374
+aircraft_289.jpg	aircraft	352	306	413	372
+aircraft_289.jpg	aircraft	426	308	486	374
+aircraft_289.jpg	aircraft	500	306	559	364
+aircraft_289.jpg	aircraft	562	298	625	362
+aircraft_289.jpg	aircraft	467	233	525	295
+aircraft_289.jpg	aircraft	904	-1	953	26

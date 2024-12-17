@@ -1,0 +1,13 @@
+aircraft_127.jpg	aircraft	224	661	310	777
+aircraft_127.jpg	aircraft	164	676	205	735
+aircraft_127.jpg	aircraft	326	648	443	766
+aircraft_127.jpg	aircraft	182	564	238	618
+aircraft_127.jpg	aircraft	458	526	558	618
+aircraft_127.jpg	aircraft	326	427	431	520
+aircraft_127.jpg	aircraft	442	426	494	489
+aircraft_127.jpg	aircraft	514	412	606	495
+aircraft_127.jpg	aircraft	732	400	813	508
+aircraft_127.jpg	aircraft	547	213	646	271
+aircraft_127.jpg	aircraft	571	151	664	213
+aircraft_127.jpg	aircraft	598	54	664	90
+aircraft_127.jpg	aircraft	607	1	685	46

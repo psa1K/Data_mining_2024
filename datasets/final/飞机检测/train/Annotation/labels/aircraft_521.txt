@@ -1,0 +1,11 @@
+aircraft_521.jpg	aircraft	3	6	88	55
+aircraft_521.jpg	aircraft	1	55	102	154
+aircraft_521.jpg	aircraft	664	10	702	39
+aircraft_521.jpg	aircraft	697	10	736	42
+aircraft_521.jpg	aircraft	642	139	742	202
+aircraft_521.jpg	aircraft	657	205	754	279
+aircraft_521.jpg	aircraft	667	282	772	360
+aircraft_521.jpg	aircraft	670	367	811	450
+aircraft_521.jpg	aircraft	693	460	816	558
+aircraft_521.jpg	aircraft	715	565	831	681
+aircraft_521.jpg	aircraft	741	741	885	876

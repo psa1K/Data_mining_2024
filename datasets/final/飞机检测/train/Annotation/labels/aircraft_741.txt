@@ -1,0 +1,2 @@
+aircraft_741.jpg	aircraft	367	304	435	360
+aircraft_741.jpg	aircraft	589	33	640	73

@@ -1,0 +1,9 @@
+aircraft_433.jpg	aircraft	673	7	718	37
+aircraft_433.jpg	aircraft	730	25	805	75
+aircraft_433.jpg	aircraft	511	274	559	319
+aircraft_433.jpg	aircraft	406	337	460	384
+aircraft_433.jpg	aircraft	316	424	424	507
+aircraft_433.jpg	aircraft	57	438	112	489
+aircraft_433.jpg	aircraft	328	754	402	843
+aircraft_433.jpg	aircraft	568	579	691	679
+aircraft_433.jpg	aircraft	675	447	742	501

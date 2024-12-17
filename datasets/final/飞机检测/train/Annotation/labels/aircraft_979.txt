@@ -1,0 +1,3 @@
+aircraft_979.jpg	aircraft	1	670	45	738
+aircraft_979.jpg	aircraft	133	366	202	430
+aircraft_979.jpg	aircraft	213	322	301	394

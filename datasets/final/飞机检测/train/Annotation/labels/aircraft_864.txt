@@ -1,0 +1,5 @@
+aircraft_864.jpg	aircraft	109	688	232	804
+aircraft_864.jpg	aircraft	513	381	568	441
+aircraft_864.jpg	aircraft	652	364	708	411
+aircraft_864.jpg	aircraft	721	583	790	651
+aircraft_864.jpg	aircraft	859	423	936	496

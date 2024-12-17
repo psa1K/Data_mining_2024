@@ -1,0 +1,12 @@
+aircraft_205.jpg	aircraft	372	595	490	724
+aircraft_205.jpg	aircraft	100	537	186	600
+aircraft_205.jpg	aircraft	100	456	177	513
+aircraft_205.jpg	aircraft	409	357	477	417
+aircraft_205.jpg	aircraft	514	382	580	441
+aircraft_205.jpg	aircraft	603	420	706	510
+aircraft_205.jpg	aircraft	733	384	834	454
+aircraft_205.jpg	aircraft	790	310	877	373
+aircraft_205.jpg	aircraft	846	252	943	309
+aircraft_205.jpg	aircraft	976	81	1042	138
+aircraft_205.jpg	aircraft	724	105	826	175
+aircraft_205.jpg	aircraft	687	52	771	97

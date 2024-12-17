@@ -1,0 +1,10 @@
+aircraft_319.jpg	aircraft	51	479	112	557
+aircraft_319.jpg	aircraft	110	457	167	523
+aircraft_319.jpg	aircraft	253	400	302	466
+aircraft_319.jpg	aircraft	307	381	366	451
+aircraft_319.jpg	aircraft	443	331	498	398
+aircraft_319.jpg	aircraft	513	302	572	375
+aircraft_319.jpg	aircraft	600	281	638	331
+aircraft_319.jpg	aircraft	668	253	711	314
+aircraft_319.jpg	aircraft	807	199	853	259
+aircraft_319.jpg	aircraft	868	183	910	230

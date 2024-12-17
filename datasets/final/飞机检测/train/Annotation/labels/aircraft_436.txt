@@ -1,0 +1,9 @@
+aircraft_436.jpg	aircraft	265	408	332	472
+aircraft_436.jpg	aircraft	308	541	362	603
+aircraft_436.jpg	aircraft	364	522	425	573
+aircraft_436.jpg	aircraft	509	433	549	474
+aircraft_436.jpg	aircraft	491	339	561	400
+aircraft_436.jpg	aircraft	672	354	723	403
+aircraft_436.jpg	aircraft	657	273	709	316
+aircraft_436.jpg	aircraft	694	318	730	346
+aircraft_436.jpg	aircraft	709	310	780	364

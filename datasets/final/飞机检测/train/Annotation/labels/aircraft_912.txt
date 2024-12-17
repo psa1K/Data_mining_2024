@@ -1,0 +1,8 @@
+aircraft_912.jpg	aircraft	0	681	33	738
+aircraft_912.jpg	aircraft	256	489	361	585
+aircraft_912.jpg	aircraft	433	402	493	463
+aircraft_912.jpg	aircraft	861	352	924	412
+aircraft_912.jpg	aircraft	16	52	70	91
+aircraft_912.jpg	aircraft	130	4	204	45
+aircraft_912.jpg	aircraft	166	93	208	135
+aircraft_912.jpg	aircraft	78	427	130	484

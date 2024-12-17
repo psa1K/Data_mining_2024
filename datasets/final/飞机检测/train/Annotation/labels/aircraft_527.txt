@@ -1,0 +1,8 @@
+aircraft_527.jpg	aircraft	562	28	738	129
+aircraft_527.jpg	aircraft	607	120	706	190
+aircraft_527.jpg	aircraft	591	187	754	316
+aircraft_527.jpg	aircraft	514	189	550	223
+aircraft_527.jpg	aircraft	244	348	321	420
+aircraft_527.jpg	aircraft	225	439	312	517
+aircraft_527.jpg	aircraft	210	564	304	649
+aircraft_527.jpg	aircraft	187	727	289	832

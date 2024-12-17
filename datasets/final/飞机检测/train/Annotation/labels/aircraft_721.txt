@@ -1,0 +1,4 @@
+aircraft_721.jpg	aircraft	10	189	96	252
+aircraft_721.jpg	aircraft	942	229	990	264
+aircraft_721.jpg	aircraft	915	322	985	384
+aircraft_721.jpg	aircraft	925	625	1033	721

@@ -1,0 +1,9 @@
+aircraft_944.jpg	aircraft	274	66	315	103
+aircraft_944.jpg	aircraft	337	217	370	256
+aircraft_944.jpg	aircraft	214	232	247	271
+aircraft_944.jpg	aircraft	277	277	318	319
+aircraft_944.jpg	aircraft	408	513	447	561
+aircraft_944.jpg	aircraft	465	559	507	606
+aircraft_944.jpg	aircraft	574	559	624	601
+aircraft_944.jpg	aircraft	594	672	636	720
+aircraft_944.jpg	aircraft	583	742	633	795

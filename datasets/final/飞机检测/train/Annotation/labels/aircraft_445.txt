@@ -1,0 +1,9 @@
+aircraft_445.jpg	aircraft	16	490	115	600
+aircraft_445.jpg	aircraft	460	90	516	124
+aircraft_445.jpg	aircraft	702	105	772	150
+aircraft_445.jpg	aircraft	816	181	895	237
+aircraft_445.jpg	aircraft	867	177	948	228
+aircraft_445.jpg	aircraft	847	231	936	307
+aircraft_445.jpg	aircraft	900	312	995	397
+aircraft_445.jpg	aircraft	958	402	1071	477
+aircraft_445.jpg	aircraft	987	481	1059	547

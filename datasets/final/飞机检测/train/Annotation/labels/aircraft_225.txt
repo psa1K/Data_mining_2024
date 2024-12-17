@@ -1,0 +1,10 @@
+aircraft_225.jpg	aircraft	259	790	321	853
+aircraft_225.jpg	aircraft	45	286	115	352
+aircraft_225.jpg	aircraft	793	631	867	694
+aircraft_225.jpg	aircraft	711	520	780	577
+aircraft_225.jpg	aircraft	639	420	700	472
+aircraft_225.jpg	aircraft	384	75	427	108
+aircraft_225.jpg	aircraft	508	40	552	78
+aircraft_225.jpg	aircraft	574	118	627	153
+aircraft_225.jpg	aircraft	655	204	691	241
+aircraft_225.jpg	aircraft	993	49	1044	96

@@ -1,0 +1,3 @@
+aircraft_726.jpg	aircraft	328	324	406	381
+aircraft_726.jpg	aircraft	480	280	561	354
+aircraft_726.jpg	aircraft	723	400	816	504

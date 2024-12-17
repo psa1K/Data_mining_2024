@@ -1,0 +1,11 @@
+aircraft_1021.jpg	aircraft	410	12	451	42
+aircraft_1021.jpg	aircraft	397	43	457	87
+aircraft_1021.jpg	aircraft	419	84	458	109
+aircraft_1021.jpg	aircraft	316	186	362	219
+aircraft_1021.jpg	aircraft	323	219	362	253
+aircraft_1021.jpg	aircraft	325	264	364	294
+aircraft_1021.jpg	aircraft	334	508	367	547
+aircraft_1021.jpg	aircraft	332	564	368	606
+aircraft_1021.jpg	aircraft	331	628	367	669
+aircraft_1021.jpg	aircraft	343	765	368	789
+aircraft_1021.jpg	aircraft	343	835	373	862

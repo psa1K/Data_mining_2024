@@ -1,0 +1,2 @@
+aircraft_1034.jpg	aircraft	466	598	570	691
+aircraft_1034.jpg	aircraft	223	105	259	136

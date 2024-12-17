@@ -1,0 +1,6 @@
+aircraft_914.jpg	aircraft	502	72	579	139
+aircraft_914.jpg	aircraft	501	156	564	193
+aircraft_914.jpg	aircraft	378	291	462	357
+aircraft_914.jpg	aircraft	253	327	321	379
+aircraft_914.jpg	aircraft	318	561	451	702
+aircraft_914.jpg	aircraft	549	594	630	678

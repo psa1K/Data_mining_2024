@@ -1,0 +1,7 @@
+aircraft_435.jpg	aircraft	60	685	126	758
+aircraft_435.jpg	aircraft	329	79	361	109
+aircraft_435.jpg	aircraft	510	96	548	130
+aircraft_435.jpg	aircraft	753	188	814	238
+aircraft_435.jpg	aircraft	793	333	869	401
+aircraft_435.jpg	aircraft	919	299	994	358
+aircraft_435.jpg	aircraft	743	544	805	598

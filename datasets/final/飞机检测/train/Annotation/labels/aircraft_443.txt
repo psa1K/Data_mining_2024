@@ -1,0 +1,9 @@
+aircraft_443.jpg	aircraft	189	31	243	67
+aircraft_443.jpg	aircraft	852	61	898	100
+aircraft_443.jpg	aircraft	910	78	996	138
+aircraft_443.jpg	aircraft	258	544	318	604
+aircraft_443.jpg	aircraft	540	529	651	622
+aircraft_443.jpg	aircraft	615	429	678	481
+aircraft_443.jpg	aircraft	721	357	768	411
+aircraft_443.jpg	aircraft	925	555	1000	616
+aircraft_443.jpg	aircraft	832	708	966	823

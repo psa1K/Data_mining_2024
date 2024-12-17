@@ -1,0 +1,3 @@
+aircraft_848.jpg	aircraft	396	454	462	504
+aircraft_848.jpg	aircraft	543	645	667	771
+aircraft_848.jpg	aircraft	396	202	424	228

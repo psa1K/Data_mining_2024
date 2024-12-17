@@ -1,0 +1,17 @@
+aircraft_661.jpg	aircraft	718	152	751	179
+aircraft_661.jpg	aircraft	721	228	768	266
+aircraft_661.jpg	aircraft	820	204	871	251
+aircraft_661.jpg	aircraft	714	418	765	467
+aircraft_661.jpg	aircraft	766	509	823	563
+aircraft_661.jpg	aircraft	460	24	515	64
+aircraft_661.jpg	aircraft	449	65	515	105
+aircraft_661.jpg	aircraft	442	104	500	145
+aircraft_661.jpg	aircraft	435	194	493	244
+aircraft_661.jpg	aircraft	432	241	497	291
+aircraft_661.jpg	aircraft	418	306	475	361
+aircraft_661.jpg	aircraft	406	478	470	536
+aircraft_661.jpg	aircraft	384	568	447	630
+aircraft_661.jpg	aircraft	359	700	445	768
+aircraft_661.jpg	aircraft	135	463	204	521
+aircraft_661.jpg	aircraft	167	347	222	401
+aircraft_661.jpg	aircraft	173	298	229	347

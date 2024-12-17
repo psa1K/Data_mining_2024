@@ -1,0 +1,4 @@
+aircraft_506.jpg	aircraft	619	300	715	387
+aircraft_506.jpg	aircraft	529	417	639	498
+aircraft_506.jpg	aircraft	466	495	580	585
+aircraft_506.jpg	aircraft	403	601	501	684

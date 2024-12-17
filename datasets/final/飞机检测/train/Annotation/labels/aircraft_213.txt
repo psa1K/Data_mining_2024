@@ -1,0 +1,4 @@
+aircraft_213.jpg	aircraft	396	459	480	540
+aircraft_213.jpg	aircraft	508	522	585	601
+aircraft_213.jpg	aircraft	933	202	972	240
+aircraft_213.jpg	aircraft	789	13	822	39

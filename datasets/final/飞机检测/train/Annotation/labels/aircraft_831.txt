@@ -1,0 +1,6 @@
+aircraft_831.jpg	aircraft	403	142	444	171
+aircraft_831.jpg	aircraft	271	611	323	664
+aircraft_831.jpg	aircraft	315	352	337	372
+aircraft_831.jpg	aircraft	462	404	493	438
+aircraft_831.jpg	aircraft	485	460	520	497
+aircraft_831.jpg	aircraft	537	436	576	463

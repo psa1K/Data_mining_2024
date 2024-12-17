@@ -1,0 +1,2 @@
+aircraft_640.jpg	aircraft	663	597	771	691
+aircraft_640.jpg	aircraft	316	303	397	373

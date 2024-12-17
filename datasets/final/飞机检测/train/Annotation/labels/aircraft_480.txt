@@ -1,0 +1,10 @@
+aircraft_480.jpg	aircraft	40	624	83	669
+aircraft_480.jpg	aircraft	182	556	224	600
+aircraft_480.jpg	aircraft	248	519	290	564
+aircraft_480.jpg	aircraft	313	489	350	529
+aircraft_480.jpg	aircraft	376	456	419	498
+aircraft_480.jpg	aircraft	793	229	853	285
+aircraft_480.jpg	aircraft	80	766	169	858
+aircraft_480.jpg	aircraft	191	733	253	811
+aircraft_480.jpg	aircraft	262	663	349	760
+aircraft_480.jpg	aircraft	618	489	703	574

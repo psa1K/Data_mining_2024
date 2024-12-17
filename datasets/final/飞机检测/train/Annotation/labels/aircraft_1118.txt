@@ -1,0 +1,2 @@
+aircraft_1118.jpg	aircraft	406	574	471	627
+aircraft_1118.jpg	aircraft	994	154	1041	202

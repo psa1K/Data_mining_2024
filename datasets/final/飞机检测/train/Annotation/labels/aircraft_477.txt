@@ -1,0 +1,4 @@
+aircraft_477.jpg	aircraft	223	291	345	376
+aircraft_477.jpg	aircraft	184	387	301	486
+aircraft_477.jpg	aircraft	558	604	684	750
+aircraft_477.jpg	aircraft	813	54	906	130

@@ -1,0 +1,13 @@
+aircraft_948.jpg	aircraft	603	7	682	66
+aircraft_948.jpg	aircraft	627	66	681	99
+aircraft_948.jpg	aircraft	621	100	679	133
+aircraft_948.jpg	aircraft	695	169	743	203
+aircraft_948.jpg	aircraft	722	201	780	237
+aircraft_948.jpg	aircraft	802	193	849	231
+aircraft_948.jpg	aircraft	701	225	752	261
+aircraft_948.jpg	aircraft	676	251	722	299
+aircraft_948.jpg	aircraft	516	277	580	318
+aircraft_948.jpg	aircraft	614	343	676	395
+aircraft_948.jpg	aircraft	495	498	545	543
+aircraft_948.jpg	aircraft	385	595	444	648
+aircraft_948.jpg	aircraft	265	721	323	784

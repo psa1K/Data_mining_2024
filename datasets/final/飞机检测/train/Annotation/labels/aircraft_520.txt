@@ -1,0 +1,14 @@
+aircraft_520.jpg	aircraft	387	6	463	54
+aircraft_520.jpg	aircraft	379	64	465	118
+aircraft_520.jpg	aircraft	376	120	460	184
+aircraft_520.jpg	aircraft	721	1	775	42
+aircraft_520.jpg	aircraft	793	1	864	33
+aircraft_520.jpg	aircraft	748	93	817	145
+aircraft_520.jpg	aircraft	817	91	885	142
+aircraft_520.jpg	aircraft	777	226	864	301
+aircraft_520.jpg	aircraft	856	217	939	301
+aircraft_520.jpg	aircraft	27	583	124	709
+aircraft_520.jpg	aircraft	150	579	240	676
+aircraft_520.jpg	aircraft	279	571	373	675
+aircraft_520.jpg	aircraft	642	550	738	676
+aircraft_520.jpg	aircraft	769	561	858	663

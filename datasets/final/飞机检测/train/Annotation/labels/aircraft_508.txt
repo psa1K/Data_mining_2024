@@ -1,0 +1,16 @@
+aircraft_508.jpg	aircraft	34	85	124	148
+aircraft_508.jpg	aircraft	379	190	427	229
+aircraft_508.jpg	aircraft	367	261	421	306
+aircraft_508.jpg	aircraft	472	229	576	312
+aircraft_508.jpg	aircraft	457	399	579	501
+aircraft_508.jpg	aircraft	609	172	663	223
+aircraft_508.jpg	aircraft	613	429	675	496
+aircraft_508.jpg	aircraft	706	37	808	96
+aircraft_508.jpg	aircraft	717	115	795	166
+aircraft_508.jpg	aircraft	735	181	802	229
+aircraft_508.jpg	aircraft	750	264	816	310
+aircraft_508.jpg	aircraft	748	351	831	405
+aircraft_508.jpg	aircraft	720	573	787	648
+aircraft_508.jpg	aircraft	726	729	804	832
+aircraft_508.jpg	aircraft	810	733	886	838
+aircraft_508.jpg	aircraft	894	736	972	834

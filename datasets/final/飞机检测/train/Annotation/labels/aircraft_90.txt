@@ -1,0 +1,10 @@
+aircraft_90.jpg	aircraft	10	51	93	118
+aircraft_90.jpg	aircraft	60	189	165	267
+aircraft_90.jpg	aircraft	175	153	261	232
+aircraft_90.jpg	aircraft	289	120	367	192
+aircraft_90.jpg	aircraft	234	261	337	346
+aircraft_90.jpg	aircraft	100	433	222	520
+aircraft_90.jpg	aircraft	213	670	291	742
+aircraft_90.jpg	aircraft	522	189	639	282
+aircraft_90.jpg	aircraft	616	364	739	471
+aircraft_90.jpg	aircraft	670	468	804	585

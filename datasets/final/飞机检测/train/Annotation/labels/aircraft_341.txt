@@ -1,0 +1,13 @@
+aircraft_341.jpg	aircraft	312	20	351	48
+aircraft_341.jpg	aircraft	310	77	342	103
+aircraft_341.jpg	aircraft	310	158	343	183
+aircraft_341.jpg	aircraft	310	200	343	229
+aircraft_341.jpg	aircraft	312	245	347	277
+aircraft_341.jpg	aircraft	312	297	345	327
+aircraft_341.jpg	aircraft	315	356	344	379
+aircraft_341.jpg	aircraft	313	483	347	516
+aircraft_341.jpg	aircraft	313	650	355	694
+aircraft_341.jpg	aircraft	375	435	413	479
+aircraft_341.jpg	aircraft	425	315	472	352
+aircraft_341.jpg	aircraft	452	471	508	523
+aircraft_341.jpg	aircraft	482	654	529	696

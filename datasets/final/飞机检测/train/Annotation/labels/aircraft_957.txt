@@ -1,0 +1,9 @@
+aircraft_957.jpg	aircraft	213	112	294	192
+aircraft_957.jpg	aircraft	474	168	570	253
+aircraft_957.jpg	aircraft	429	321	555	415
+aircraft_957.jpg	aircraft	411	406	480	468
+aircraft_957.jpg	aircraft	316	669	465	805
+aircraft_957.jpg	aircraft	732	381	844	456
+aircraft_957.jpg	aircraft	726	597	808	667
+aircraft_957.jpg	aircraft	715	661	798	739
+aircraft_957.jpg	aircraft	637	744	802	867

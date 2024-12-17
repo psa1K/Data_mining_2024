@@ -1,0 +1,4 @@
+aircraft_891.jpg	aircraft	63	480	175	582
+aircraft_891.jpg	aircraft	430	457	540	568
+aircraft_891.jpg	aircraft	495	523	621	627
+aircraft_891.jpg	aircraft	871	403	985	504

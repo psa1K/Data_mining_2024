@@ -1,0 +1,4 @@
+aircraft_33.jpg	aircraft	766	82	870	211
+aircraft_33.jpg	aircraft	505	331	630	442
+aircraft_33.jpg	aircraft	432	459	579	586
+aircraft_33.jpg	aircraft	385	600	543	730

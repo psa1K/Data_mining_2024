@@ -1,0 +1,15 @@
+aircraft_626.jpg	aircraft	112	208	155	237
+aircraft_626.jpg	aircraft	149	282	188	318
+aircraft_626.jpg	aircraft	275	268	330	315
+aircraft_626.jpg	aircraft	324	148	374	176
+aircraft_626.jpg	aircraft	331	179	375	208
+aircraft_626.jpg	aircraft	582	208	635	259
+aircraft_626.jpg	aircraft	428	312	502	362
+aircraft_626.jpg	aircraft	541	358	598	408
+aircraft_626.jpg	aircraft	397	384	448	442
+aircraft_626.jpg	aircraft	270	421	320	469
+aircraft_626.jpg	aircraft	206	435	255	484
+aircraft_626.jpg	aircraft	136	446	187	498
+aircraft_626.jpg	aircraft	160	747	222	821
+aircraft_626.jpg	aircraft	395	686	459	758
+aircraft_626.jpg	aircraft	701	623	763	691

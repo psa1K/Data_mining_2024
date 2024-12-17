@@ -1,0 +1,9 @@
+aircraft_572.jpg	aircraft	112	849	173	915
+aircraft_572.jpg	aircraft	458	433	516	478
+aircraft_572.jpg	aircraft	529	384	563	409
+aircraft_572.jpg	aircraft	600	287	621	305
+aircraft_572.jpg	aircraft	662	209	691	229
+aircraft_572.jpg	aircraft	750	464	787	492
+aircraft_572.jpg	aircraft	698	518	749	558
+aircraft_572.jpg	aircraft	650	589	708	636
+aircraft_572.jpg	aircraft	552	744	613	798

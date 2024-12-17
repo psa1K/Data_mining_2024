@@ -1,0 +1,8 @@
+aircraft_908.jpg	aircraft	121	222	223	304
+aircraft_908.jpg	aircraft	223	189	277	226
+aircraft_908.jpg	aircraft	75	450	127	495
+aircraft_908.jpg	aircraft	157	574	226	633
+aircraft_908.jpg	aircraft	333	411	367	447
+aircraft_908.jpg	aircraft	424	178	462	217
+aircraft_908.jpg	aircraft	526	115	591	153
+aircraft_908.jpg	aircraft	666	198	723	240

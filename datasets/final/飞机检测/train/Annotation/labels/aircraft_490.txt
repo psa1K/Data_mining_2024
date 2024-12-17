@@ -1,0 +1,12 @@
+aircraft_490.jpg	aircraft	361	324	427	373
+aircraft_490.jpg	aircraft	297	454	366	508
+aircraft_490.jpg	aircraft	171	697	249	754
+aircraft_490.jpg	aircraft	522	256	555	288
+aircraft_490.jpg	aircraft	393	75	421	102
+aircraft_490.jpg	aircraft	499	303	537	336
+aircraft_490.jpg	aircraft	766	318	811	354
+aircraft_490.jpg	aircraft	859	87	892	115
+aircraft_490.jpg	aircraft	918	93	951	118
+aircraft_490.jpg	aircraft	927	130	963	154
+aircraft_490.jpg	aircraft	928	213	973	246
+aircraft_490.jpg	aircraft	852	303	907	339

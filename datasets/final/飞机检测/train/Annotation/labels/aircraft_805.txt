@@ -1,0 +1,3 @@
+aircraft_805.jpg	aircraft	816	343	864	385
+aircraft_805.jpg	aircraft	425	544	491	598
+aircraft_805.jpg	aircraft	637	189	667	219

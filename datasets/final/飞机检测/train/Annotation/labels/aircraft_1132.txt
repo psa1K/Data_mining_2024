@@ -1,0 +1,11 @@
+aircraft_1132.jpg	aircraft	784	219	864	292
+aircraft_1132.jpg	aircraft	639	295	804	438
+aircraft_1132.jpg	aircraft	556	135	616	187
+aircraft_1132.jpg	aircraft	505	165	565	217
+aircraft_1132.jpg	aircraft	439	204	509	270
+aircraft_1132.jpg	aircraft	319	214	437	322
+aircraft_1132.jpg	aircraft	272	309	347	375
+aircraft_1132.jpg	aircraft	223	604	362	751
+aircraft_1132.jpg	aircraft	68	715	203	871
+aircraft_1132.jpg	aircraft	28	519	62	561
+aircraft_1132.jpg	aircraft	73	486	110	520

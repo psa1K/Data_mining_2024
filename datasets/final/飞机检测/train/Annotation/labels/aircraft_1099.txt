@@ -1,0 +1,2 @@
+aircraft_1099.jpg	aircraft	460	265	522	298
+aircraft_1099.jpg	aircraft	657	159	712	193

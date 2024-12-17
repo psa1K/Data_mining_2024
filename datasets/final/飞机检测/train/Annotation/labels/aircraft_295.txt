@@ -1,0 +1,13 @@
+aircraft_295.jpg	aircraft	218	140	287	200
+aircraft_295.jpg	aircraft	291	276	362	336
+aircraft_295.jpg	aircraft	328	349	402	409
+aircraft_295.jpg	aircraft	361	417	440	479
+aircraft_295.jpg	aircraft	405	486	476	548
+aircraft_295.jpg	aircraft	447	555	510	617
+aircraft_295.jpg	aircraft	632	479	710	543
+aircraft_295.jpg	aircraft	593	409	672	471
+aircraft_295.jpg	aircraft	554	338	633	397
+aircraft_295.jpg	aircraft	516	269	591	334
+aircraft_295.jpg	aircraft	474	200	554	262
+aircraft_295.jpg	aircraft	439	131	516	192
+aircraft_295.jpg	aircraft	364	-2	435	59

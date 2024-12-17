@@ -1,0 +1,14 @@
+aircraft_217.jpg	aircraft	504	738	564	802
+aircraft_217.jpg	aircraft	475	679	526	736
+aircraft_217.jpg	aircraft	442	627	502	672
+aircraft_217.jpg	aircraft	414	573	474	618
+aircraft_217.jpg	aircraft	367	502	448	568
+aircraft_217.jpg	aircraft	327	426	412	481
+aircraft_217.jpg	aircraft	292	369	358	423
+aircraft_217.jpg	aircraft	679	549	756	610
+aircraft_217.jpg	aircraft	636	459	711	520
+aircraft_217.jpg	aircraft	204	189	268	231
+aircraft_217.jpg	aircraft	177	138	250	189
+aircraft_217.jpg	aircraft	159	94	211	133
+aircraft_217.jpg	aircraft	139	46	204	84
+aircraft_217.jpg	aircraft	133	7	181	45

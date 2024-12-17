@@ -1,0 +1,9 @@
+aircraft_601.jpg	aircraft	567	63	613	100
+aircraft_601.jpg	aircraft	708	2	790	37
+aircraft_601.jpg	aircraft	270	266	356	332
+aircraft_601.jpg	aircraft	143	450	211	504
+aircraft_601.jpg	aircraft	354	811	521	917
+aircraft_601.jpg	aircraft	527	735	606	811
+aircraft_601.jpg	aircraft	627	658	693	731
+aircraft_601.jpg	aircraft	411	450	517	561
+aircraft_601.jpg	aircraft	532	396	626	488

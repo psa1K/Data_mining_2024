@@ -1,0 +1,16 @@
+aircraft_569.jpg	aircraft	455	48	528	97
+aircraft_569.jpg	aircraft	497	100	580	158
+aircraft_569.jpg	aircraft	552	167	632	220
+aircraft_569.jpg	aircraft	663	304	766	375
+aircraft_569.jpg	aircraft	738	390	835	467
+aircraft_569.jpg	aircraft	816	487	909	570
+aircraft_569.jpg	aircraft	904	594	1016	688
+aircraft_569.jpg	aircraft	358	173	428	220
+aircraft_569.jpg	aircraft	476	352	560	412
+aircraft_569.jpg	aircraft	573	501	676	580
+aircraft_569.jpg	aircraft	704	695	811	792
+aircraft_569.jpg	aircraft	49	216	77	243
+aircraft_569.jpg	aircraft	1	315	29	349
+aircraft_569.jpg	aircraft	18	417	76	454
+aircraft_569.jpg	aircraft	65	546	106	576
+aircraft_569.jpg	aircraft	161	853	225	907

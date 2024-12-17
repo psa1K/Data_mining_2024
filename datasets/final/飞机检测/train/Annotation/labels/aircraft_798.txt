@@ -1,0 +1,6 @@
+aircraft_798.jpg	aircraft	246	250	343	340
+aircraft_798.jpg	aircraft	66	600	196	763
+aircraft_798.jpg	aircraft	97	133	127	156
+aircraft_798.jpg	aircraft	663	207	738	273
+aircraft_798.jpg	aircraft	769	181	859	253
+aircraft_798.jpg	aircraft	895	174	988	250

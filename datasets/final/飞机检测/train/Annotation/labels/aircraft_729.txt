@@ -1,0 +1,8 @@
+aircraft_729.jpg	aircraft	115	180	187	236
+aircraft_729.jpg	aircraft	73	234	130	273
+aircraft_729.jpg	aircraft	2	348	37	389
+aircraft_729.jpg	aircraft	158	258	208	313
+aircraft_729.jpg	aircraft	142	388	198	439
+aircraft_729.jpg	aircraft	245	241	334	310
+aircraft_729.jpg	aircraft	369	313	451	397
+aircraft_729.jpg	aircraft	461	319	548	404

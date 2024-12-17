@@ -1,0 +1,2 @@
+aircraft_615.jpg	aircraft	76	98	111	132
+aircraft_615.jpg	aircraft	120	79	154	110

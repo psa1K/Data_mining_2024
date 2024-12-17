@@ -1,0 +1,10 @@
+aircraft_856.jpg	aircraft	266	408	335	478
+aircraft_856.jpg	aircraft	304	538	362	606
+aircraft_856.jpg	aircraft	365	520	431	576
+aircraft_856.jpg	aircraft	491	334	561	399
+aircraft_856.jpg	aircraft	506	430	550	478
+aircraft_856.jpg	aircraft	669	354	718	402
+aircraft_856.jpg	aircraft	655	270	711	318
+aircraft_856.jpg	aircraft	691	301	712	321
+aircraft_856.jpg	aircraft	691	312	727	346
+aircraft_856.jpg	aircraft	706	307	783	367

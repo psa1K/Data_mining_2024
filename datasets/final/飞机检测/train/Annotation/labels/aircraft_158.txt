@@ -1,0 +1,4 @@
+aircraft_158.jpg	aircraft	69	45	123	82
+aircraft_158.jpg	aircraft	220	37	268	72
+aircraft_158.jpg	aircraft	120	196	196	267
+aircraft_158.jpg	aircraft	520	709	621	781

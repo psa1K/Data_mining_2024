@@ -1,0 +1,4 @@
+aircraft_743.jpg	aircraft	160	340	244	418
+aircraft_743.jpg	aircraft	154	552	226	604
+aircraft_743.jpg	aircraft	451	231	552	304
+aircraft_743.jpg	aircraft	925	127	951	151

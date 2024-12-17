@@ -1,0 +1,9 @@
+aircraft_780.jpg	aircraft	590	133	638	166
+aircraft_780.jpg	aircraft	662	174	679	192
+aircraft_780.jpg	aircraft	749	153	767	172
+aircraft_780.jpg	aircraft	711	131	737	148
+aircraft_780.jpg	aircraft	122	368	160	403
+aircraft_780.jpg	aircraft	57	457	107	499
+aircraft_780.jpg	aircraft	66	485	119	523
+aircraft_780.jpg	aircraft	39	516	93	555
+aircraft_780.jpg	aircraft	73	520	123	564

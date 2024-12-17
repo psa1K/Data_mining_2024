@@ -1,0 +1,4 @@
+aircraft_455.jpg	aircraft	676	178	742	222
+aircraft_455.jpg	aircraft	130	580	187	639
+aircraft_455.jpg	aircraft	216	613	289	696
+aircraft_455.jpg	aircraft	394	754	459	826

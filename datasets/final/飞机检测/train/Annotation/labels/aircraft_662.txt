@@ -1,0 +1,4 @@
+aircraft_662.jpg	aircraft	481	343	548	414
+aircraft_662.jpg	aircraft	636	221	707	280
+aircraft_662.jpg	aircraft	375	278	440	331
+aircraft_662.jpg	aircraft	231	663	292	726

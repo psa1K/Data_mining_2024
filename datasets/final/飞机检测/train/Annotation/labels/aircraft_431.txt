@@ -1,0 +1,3 @@
+aircraft_431.jpg	aircraft	42	622	126	714
+aircraft_431.jpg	aircraft	763	267	817	306
+aircraft_431.jpg	aircraft	922	144	973	184

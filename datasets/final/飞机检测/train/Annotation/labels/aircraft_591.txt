@@ -1,0 +1,14 @@
+aircraft_591.jpg	aircraft	156	791	212	861
+aircraft_591.jpg	aircraft	215	757	254	799
+aircraft_591.jpg	aircraft	251	730	292	771
+aircraft_591.jpg	aircraft	282	700	328	756
+aircraft_591.jpg	aircraft	607	615	641	648
+aircraft_591.jpg	aircraft	648	160	694	202
+aircraft_591.jpg	aircraft	934	90	971	121
+aircraft_591.jpg	aircraft	620	258	641	277
+aircraft_591.jpg	aircraft	654	285	674	305
+aircraft_591.jpg	aircraft	698	317	718	335
+aircraft_591.jpg	aircraft	733	332	765	366
+aircraft_591.jpg	aircraft	773	372	793	393
+aircraft_591.jpg	aircraft	564	313	584	331
+aircraft_591.jpg	aircraft	628	373	661	402

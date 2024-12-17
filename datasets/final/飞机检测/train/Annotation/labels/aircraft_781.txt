@@ -1,0 +1,16 @@
+aircraft_781.jpg	aircraft	45	551	83	582
+aircraft_781.jpg	aircraft	47	582	84	608
+aircraft_781.jpg	aircraft	49	606	80	644
+aircraft_781.jpg	aircraft	154	549	218	610
+aircraft_781.jpg	aircraft	233	532	315	596
+aircraft_781.jpg	aircraft	321	515	400	578
+aircraft_781.jpg	aircraft	406	498	486	557
+aircraft_781.jpg	aircraft	487	477	571	540
+aircraft_781.jpg	aircraft	571	445	652	509
+aircraft_781.jpg	aircraft	632	551	675	592
+aircraft_781.jpg	aircraft	652	612	690	650
+aircraft_781.jpg	aircraft	714	636	764	680
+aircraft_781.jpg	aircraft	785	623	827	670
+aircraft_781.jpg	aircraft	800	391	865	451
+aircraft_781.jpg	aircraft	802	343	843	382
+aircraft_781.jpg	aircraft	874	514	916	597

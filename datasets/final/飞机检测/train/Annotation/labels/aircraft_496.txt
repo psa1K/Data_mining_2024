@@ -1,0 +1,8 @@
+aircraft_496.jpg	aircraft	433	268	498	321
+aircraft_496.jpg	aircraft	400	369	465	424
+aircraft_496.jpg	aircraft	357	418	415	477
+aircraft_496.jpg	aircraft	361	478	435	540
+aircraft_496.jpg	aircraft	331	604	388	663
+aircraft_496.jpg	aircraft	633	627	753	724
+aircraft_496.jpg	aircraft	744	102	832	160
+aircraft_496.jpg	aircraft	736	25	843	99

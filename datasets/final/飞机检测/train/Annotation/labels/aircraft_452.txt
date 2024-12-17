@@ -1,0 +1,2 @@
+aircraft_452.jpg	aircraft	226	336	334	418
+aircraft_452.jpg	aircraft	874	238	945	294

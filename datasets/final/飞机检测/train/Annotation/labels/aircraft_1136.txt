@@ -1,0 +1,4 @@
+aircraft_1136.jpg	aircraft	300	27	367	69
+aircraft_1136.jpg	aircraft	327	223	409	270
+aircraft_1136.jpg	aircraft	346	277	417	330
+aircraft_1136.jpg	aircraft	361	342	429	396

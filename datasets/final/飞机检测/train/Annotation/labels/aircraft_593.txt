@@ -1,0 +1,2 @@
+aircraft_593.jpg	aircraft	579	532	638	569
+aircraft_593.jpg	aircraft	633	532	684	591

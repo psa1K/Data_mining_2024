@@ -1,0 +1,7 @@
+aircraft_450.jpg	aircraft	238	189	312	256
+aircraft_450.jpg	aircraft	327	217	378	264
+aircraft_450.jpg	aircraft	612	319	670	369
+aircraft_450.jpg	aircraft	681	331	762	406
+aircraft_450.jpg	aircraft	769	372	832	427
+aircraft_450.jpg	aircraft	859	400	922	459
+aircraft_450.jpg	aircraft	318	472	387	528

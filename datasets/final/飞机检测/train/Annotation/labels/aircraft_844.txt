@@ -1,0 +1,7 @@
+aircraft_844.jpg	aircraft	403	484	484	562
+aircraft_844.jpg	aircraft	556	378	606	433
+aircraft_844.jpg	aircraft	606	325	670	379
+aircraft_844.jpg	aircraft	651	289	708	337
+aircraft_844.jpg	aircraft	739	232	765	258
+aircraft_844.jpg	aircraft	718	66	753	97
+aircraft_844.jpg	aircraft	760	90	802	123

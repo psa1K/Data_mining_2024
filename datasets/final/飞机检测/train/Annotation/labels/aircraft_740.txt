@@ -1,0 +1,2 @@
+aircraft_740.jpg	aircraft	576	230	634	283
+aircraft_740.jpg	aircraft	777	225	834	271

@@ -1,0 +1,4 @@
+aircraft_698.jpg	aircraft	70	49	112	81
+aircraft_698.jpg	aircraft	218	41	257	70
+aircraft_698.jpg	aircraft	121	200	201	263
+aircraft_698.jpg	aircraft	521	714	606	781

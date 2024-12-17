@@ -1,0 +1,7 @@
+aircraft_826.jpg	aircraft	285	519	339	571
+aircraft_826.jpg	aircraft	348	510	412	568
+aircraft_826.jpg	aircraft	414	505	481	559
+aircraft_826.jpg	aircraft	483	498	543	555
+aircraft_826.jpg	aircraft	546	489	609	547
+aircraft_826.jpg	aircraft	609	486	673	541
+aircraft_826.jpg	aircraft	663	400	711	454

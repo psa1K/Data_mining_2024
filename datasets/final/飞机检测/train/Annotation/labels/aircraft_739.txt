@@ -1,0 +1,7 @@
+aircraft_739.jpg	aircraft	162	765	246	842
+aircraft_739.jpg	aircraft	72	303	121	350
+aircraft_739.jpg	aircraft	134	120	176	160
+aircraft_739.jpg	aircraft	267	167	320	214
+aircraft_739.jpg	aircraft	433	127	552	204
+aircraft_739.jpg	aircraft	553	95	606	128
+aircraft_739.jpg	aircraft	611	62	662	99

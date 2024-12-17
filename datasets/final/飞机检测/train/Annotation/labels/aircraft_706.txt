@@ -1,0 +1,10 @@
+aircraft_706.jpg	aircraft	295	484	349	546
+aircraft_706.jpg	aircraft	421	388	490	447
+aircraft_706.jpg	aircraft	669	385	720	433
+aircraft_706.jpg	aircraft	570	580	639	639
+aircraft_706.jpg	aircraft	267	322	300	346
+aircraft_706.jpg	aircraft	372	195	415	220
+aircraft_706.jpg	aircraft	478	195	523	237
+aircraft_706.jpg	aircraft	691	271	745	328
+aircraft_706.jpg	aircraft	799	309	829	336
+aircraft_706.jpg	aircraft	651	246	697	300

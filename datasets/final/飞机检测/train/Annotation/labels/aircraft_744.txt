@@ -1,0 +1,5 @@
+aircraft_744.jpg	aircraft	219	538	318	658
+aircraft_744.jpg	aircraft	336	532	433	652
+aircraft_744.jpg	aircraft	445	523	531	643
+aircraft_744.jpg	aircraft	552	516	649	636
+aircraft_744.jpg	aircraft	672	514	774	637

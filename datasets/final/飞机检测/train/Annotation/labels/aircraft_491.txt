@@ -1,0 +1,15 @@
+aircraft_491.jpg	aircraft	156	19	193	49
+aircraft_491.jpg	aircraft	34	72	69	102
+aircraft_491.jpg	aircraft	63	96	106	121
+aircraft_491.jpg	aircraft	138	130	181	162
+aircraft_491.jpg	aircraft	22	160	82	198
+aircraft_491.jpg	aircraft	84	231	127	264
+aircraft_491.jpg	aircraft	184	190	225	223
+aircraft_491.jpg	aircraft	265	180	316	211
+aircraft_491.jpg	aircraft	228	262	265	295
+aircraft_491.jpg	aircraft	277	252	328	286
+aircraft_491.jpg	aircraft	211	456	259	499
+aircraft_491.jpg	aircraft	249	441	306	483
+aircraft_491.jpg	aircraft	202	645	255	687
+aircraft_491.jpg	aircraft	249	621	313	666
+aircraft_491.jpg	aircraft	757	73	793	99

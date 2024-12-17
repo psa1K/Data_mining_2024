@@ -1,0 +1,15 @@
+aircraft_385.jpg	aircraft	350	56	397	98
+aircraft_385.jpg	aircraft	379	151	404	167
+aircraft_385.jpg	aircraft	423	157	448	175
+aircraft_385.jpg	aircraft	474	161	492	179
+aircraft_385.jpg	aircraft	510	158	545	185
+aircraft_385.jpg	aircraft	558	171	582	188
+aircraft_385.jpg	aircraft	366	217	388	236
+aircraft_385.jpg	aircraft	451	229	486	252
+aircraft_385.jpg	aircraft	546	236	578	276
+aircraft_385.jpg	aircraft	569	414	606	442
+aircraft_385.jpg	aircraft	539	626	569	658
+aircraft_385.jpg	aircraft	365	641	424	686
+aircraft_385.jpg	aircraft	355	684	397	731
+aircraft_385.jpg	aircraft	342	727	383	774
+aircraft_385.jpg	aircraft	314	771	390	835

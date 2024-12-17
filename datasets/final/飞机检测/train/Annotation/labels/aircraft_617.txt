@@ -1,0 +1,3 @@
+aircraft_617.jpg	aircraft	88	24	162	85
+aircraft_617.jpg	aircraft	218	214	272	261
+aircraft_617.jpg	aircraft	569	727	640	789

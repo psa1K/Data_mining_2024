@@ -1,0 +1,4 @@
+aircraft_49.jpg	aircraft	487	156	543	208
+aircraft_49.jpg	aircraft	273	222	337	271
+aircraft_49.jpg	aircraft	285	420	349	477
+aircraft_49.jpg	aircraft	271	568	367	642

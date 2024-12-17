@@ -1,0 +1,7 @@
+aircraft_671.jpg	aircraft	45	201	94	247
+aircraft_671.jpg	aircraft	193	192	252	240
+aircraft_671.jpg	aircraft	361	192	418	240
+aircraft_671.jpg	aircraft	829	376	879	420
+aircraft_671.jpg	aircraft	837	447	873	480
+aircraft_671.jpg	aircraft	846	574	895	625
+aircraft_671.jpg	aircraft	853	645	904	703

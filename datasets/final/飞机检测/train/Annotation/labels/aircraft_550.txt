@@ -1,0 +1,9 @@
+aircraft_550.jpg	aircraft	107	625	149	665
+aircraft_550.jpg	aircraft	156	583	195	620
+aircraft_550.jpg	aircraft	244	508	279	540
+aircraft_550.jpg	aircraft	286	474	320	504
+aircraft_550.jpg	aircraft	412	464	455	514
+aircraft_550.jpg	aircraft	470	498	517	546
+aircraft_550.jpg	aircraft	509	534	550	568
+aircraft_550.jpg	aircraft	281	583	369	664
+aircraft_550.jpg	aircraft	279	694	370	788

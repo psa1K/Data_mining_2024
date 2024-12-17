@@ -1,0 +1,10 @@
+aircraft_758.jpg	aircraft	40	625	80	666
+aircraft_758.jpg	aircraft	184	556	223	595
+aircraft_758.jpg	aircraft	248	520	287	562
+aircraft_758.jpg	aircraft	313	490	353	531
+aircraft_758.jpg	aircraft	378	457	418	501
+aircraft_758.jpg	aircraft	794	228	858	286
+aircraft_758.jpg	aircraft	618	484	703	579
+aircraft_758.jpg	aircraft	259	666	352	768
+aircraft_758.jpg	aircraft	193	733	253	814
+aircraft_758.jpg	aircraft	80	766	170	858

@@ -1,0 +1,13 @@
+aircraft_760.jpg	aircraft	258	415	318	471
+aircraft_760.jpg	aircraft	622	277	717	342
+aircraft_760.jpg	aircraft	703	229	793	297
+aircraft_760.jpg	aircraft	883	115	939	156
+aircraft_760.jpg	aircraft	885	154	924	178
+aircraft_760.jpg	aircraft	735	294	838	361
+aircraft_760.jpg	aircraft	726	357	877	451
+aircraft_760.jpg	aircraft	670	456	744	517
+aircraft_760.jpg	aircraft	643	517	691	561
+aircraft_760.jpg	aircraft	348	385	367	402
+aircraft_760.jpg	aircraft	375	369	402	393
+aircraft_760.jpg	aircraft	274	214	292	228
+aircraft_760.jpg	aircraft	334	76	357	91

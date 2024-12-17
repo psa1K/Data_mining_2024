@@ -1,0 +1,7 @@
+aircraft_308.jpg	aircraft	325	163	453	235
+aircraft_308.jpg	aircraft	331	250	457	321
+aircraft_308.jpg	aircraft	340	330	468	408
+aircraft_308.jpg	aircraft	346	417	468	489
+aircraft_308.jpg	aircraft	345	501	477	573
+aircraft_308.jpg	aircraft	409	799	496	864
+aircraft_308.jpg	aircraft	418	921	501	981

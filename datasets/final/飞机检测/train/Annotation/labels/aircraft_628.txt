@@ -1,0 +1,11 @@
+aircraft_628.jpg	aircraft	525	6	565	31
+aircraft_628.jpg	aircraft	625	65	657	84
+aircraft_628.jpg	aircraft	676	49	723	76
+aircraft_628.jpg	aircraft	780	44	823	78
+aircraft_628.jpg	aircraft	765	90	809	121
+aircraft_628.jpg	aircraft	411	124	458	159
+aircraft_628.jpg	aircraft	217	525	241	547
+aircraft_628.jpg	aircraft	272	581	313	617
+aircraft_628.jpg	aircraft	361	694	397	731
+aircraft_628.jpg	aircraft	223	693	270	734
+aircraft_628.jpg	aircraft	268	782	315	827

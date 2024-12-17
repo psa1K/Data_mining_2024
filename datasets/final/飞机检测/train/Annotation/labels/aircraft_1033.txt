@@ -1,0 +1,13 @@
+aircraft_1033.jpg	aircraft	286	487	323	523
+aircraft_1033.jpg	aircraft	618	375	691	426
+aircraft_1033.jpg	aircraft	616	469	669	519
+aircraft_1033.jpg	aircraft	622	511	661	544
+aircraft_1033.jpg	aircraft	630	528	684	571
+aircraft_1033.jpg	aircraft	631	579	690	628
+aircraft_1033.jpg	aircraft	660	615	712	667
+aircraft_1033.jpg	aircraft	810	390	865	433
+aircraft_1033.jpg	aircraft	840	478	898	523
+aircraft_1033.jpg	aircraft	850	528	891	565
+aircraft_1033.jpg	aircraft	855	552	918	603
+aircraft_1033.jpg	aircraft	880	598	982	679
+aircraft_1033.jpg	aircraft	871	697	897	721

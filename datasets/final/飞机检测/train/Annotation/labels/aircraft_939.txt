@@ -1,0 +1,7 @@
+aircraft_939.jpg	aircraft	681	87	706	112
+aircraft_939.jpg	aircraft	828	112	922	196
+aircraft_939.jpg	aircraft	976	138	1023	175
+aircraft_939.jpg	aircraft	342	271	412	331
+aircraft_939.jpg	aircraft	435	441	493	493
+aircraft_939.jpg	aircraft	538	516	601	577
+aircraft_939.jpg	aircraft	334	628	403	699

@@ -1,0 +1,2 @@
+aircraft_993.jpg	aircraft	223	331	339	420
+aircraft_993.jpg	aircraft	871	235	948	294

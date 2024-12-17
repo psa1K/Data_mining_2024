@@ -1,0 +1,2 @@
+aircraft_396.jpg	aircraft	70	341	139	401
+aircraft_396.jpg	aircraft	922	300	1017	372

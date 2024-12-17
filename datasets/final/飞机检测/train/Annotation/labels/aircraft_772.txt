@@ -1,0 +1,7 @@
+aircraft_772.jpg	aircraft	39	235	130	310
+aircraft_772.jpg	aircraft	165	229	262	312
+aircraft_772.jpg	aircraft	406	190	480	267
+aircraft_772.jpg	aircraft	510	175	577	246
+aircraft_772.jpg	aircraft	145	592	247	688
+aircraft_772.jpg	aircraft	711	352	813	447
+aircraft_772.jpg	aircraft	825	316	922	424

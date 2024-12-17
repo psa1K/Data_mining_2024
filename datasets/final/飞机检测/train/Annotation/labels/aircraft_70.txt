@@ -1,0 +1,3 @@
+aircraft_70.jpg	aircraft	639	570	774	685
+aircraft_70.jpg	aircraft	468	150	540	220
+aircraft_70.jpg	aircraft	139	190	216	252

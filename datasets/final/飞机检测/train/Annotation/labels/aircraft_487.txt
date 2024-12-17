@@ -1,0 +1,7 @@
+aircraft_487.jpg	aircraft	39	237	135	313
+aircraft_487.jpg	aircraft	168	229	265	312
+aircraft_487.jpg	aircraft	402	189	481	267
+aircraft_487.jpg	aircraft	513	178	580	243
+aircraft_487.jpg	aircraft	709	346	811	450
+aircraft_487.jpg	aircraft	822	313	918	421
+aircraft_487.jpg	aircraft	145	591	249	688

@@ -1,0 +1,9 @@
+aircraft_400.jpg	aircraft	889	38	969	98
+aircraft_400.jpg	aircraft	761	51	807	89
+aircraft_400.jpg	aircraft	697	95	770	146
+aircraft_400.jpg	aircraft	681	225	798	291
+aircraft_400.jpg	aircraft	420	329	474	375
+aircraft_400.jpg	aircraft	308	17	362	51
+aircraft_400.jpg	aircraft	24	218	140	289
+aircraft_400.jpg	aircraft	354	653	501	768
+aircraft_400.jpg	aircraft	70	804	155	881

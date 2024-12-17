@@ -1,0 +1,7 @@
+aircraft_538.jpg	aircraft	522	21	642	94
+aircraft_538.jpg	aircraft	592	96	721	180
+aircraft_538.jpg	aircraft	302	147	442	229
+aircraft_538.jpg	aircraft	392	310	556	421
+aircraft_538.jpg	aircraft	502	456	597	528
+aircraft_538.jpg	aircraft	546	577	634	648
+aircraft_538.jpg	aircraft	675	778	778	870

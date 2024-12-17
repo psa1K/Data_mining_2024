@@ -1,0 +1,3 @@
+aircraft_738.jpg	aircraft	40	624	129	712
+aircraft_738.jpg	aircraft	771	270	815	306
+aircraft_738.jpg	aircraft	925	142	976	182

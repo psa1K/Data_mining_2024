@@ -1,0 +1,13 @@
+aircraft_874.jpg	aircraft	36	306	72	337
+aircraft_874.jpg	aircraft	118	366	186	418
+aircraft_874.jpg	aircraft	103	394	156	436
+aircraft_874.jpg	aircraft	112	414	184	477
+aircraft_874.jpg	aircraft	99	448	150	493
+aircraft_874.jpg	aircraft	85	475	156	534
+aircraft_874.jpg	aircraft	58	498	117	546
+aircraft_874.jpg	aircraft	399	468	465	544
+aircraft_874.jpg	aircraft	462	669	501	700
+aircraft_874.jpg	aircraft	517	669	559	700
+aircraft_874.jpg	aircraft	589	598	660	682
+aircraft_874.jpg	aircraft	681	597	756	688
+aircraft_874.jpg	aircraft	885	613	943	675

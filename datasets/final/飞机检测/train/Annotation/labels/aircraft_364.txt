@@ -1,0 +1,8 @@
+aircraft_364.jpg	aircraft	42	387	113	436
+aircraft_364.jpg	aircraft	84	12	128	54
+aircraft_364.jpg	aircraft	121	24	169	67
+aircraft_364.jpg	aircraft	162	31	210	69
+aircraft_364.jpg	aircraft	215	34	254	65
+aircraft_364.jpg	aircraft	253	44	293	77
+aircraft_364.jpg	aircraft	295	49	329	79
+aircraft_364.jpg	aircraft	361	56	405	95

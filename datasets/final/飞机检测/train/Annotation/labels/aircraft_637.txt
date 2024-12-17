@@ -1,0 +1,7 @@
+aircraft_637.jpg	aircraft	513	337	580	409
+aircraft_637.jpg	aircraft	595	393	639	427
+aircraft_637.jpg	aircraft	660	372	732	448
+aircraft_637.jpg	aircraft	730	409	789	471
+aircraft_637.jpg	aircraft	744	348	801	399
+aircraft_637.jpg	aircraft	756	385	819	436
+aircraft_637.jpg	aircraft	873	387	934	442

@@ -1,0 +1,5 @@
+aircraft_965.jpg	aircraft	406	103	432	125
+aircraft_965.jpg	aircraft	444	85	494	126
+aircraft_965.jpg	aircraft	473	259	527	301
+aircraft_965.jpg	aircraft	509	334	555	376
+aircraft_965.jpg	aircraft	548	494	643	588

@@ -1,0 +1,8 @@
+aircraft_383.jpg	aircraft	480	303	526	345
+aircraft_383.jpg	aircraft	576	402	607	431
+aircraft_383.jpg	aircraft	531	450	560	476
+aircraft_383.jpg	aircraft	368	658	397	684
+aircraft_383.jpg	aircraft	272	516	321	569
+aircraft_383.jpg	aircraft	173	629	217	677
+aircraft_383.jpg	aircraft	58	744	114	806
+aircraft_383.jpg	aircraft	885	14	915	34

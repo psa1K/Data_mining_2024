@@ -1,0 +1,13 @@
+aircraft_943.jpg	aircraft	814	88	861	130
+aircraft_943.jpg	aircraft	384	165	411	184
+aircraft_943.jpg	aircraft	378	186	403	213
+aircraft_943.jpg	aircraft	372	211	402	237
+aircraft_943.jpg	aircraft	354	262	402	301
+aircraft_943.jpg	aircraft	349	310	393	345
+aircraft_943.jpg	aircraft	336	354	390	408
+aircraft_943.jpg	aircraft	328	417	384	466
+aircraft_943.jpg	aircraft	324	469	370	510
+aircraft_943.jpg	aircraft	309	588	361	648
+aircraft_943.jpg	aircraft	301	655	354	721
+aircraft_943.jpg	aircraft	294	738	340	790
+aircraft_943.jpg	aircraft	276	822	334	892

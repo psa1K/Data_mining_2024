@@ -1,0 +1,6 @@
+aircraft_21.jpg	aircraft	54	166	178	286
+aircraft_21.jpg	aircraft	310	123	423	228
+aircraft_21.jpg	aircraft	541	111	666	204
+aircraft_21.jpg	aircraft	390	721	484	805
+aircraft_21.jpg	aircraft	399	832	490	915
+aircraft_21.jpg	aircraft	745	645	897	793

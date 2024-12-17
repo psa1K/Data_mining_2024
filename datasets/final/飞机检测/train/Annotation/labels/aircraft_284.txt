@@ -1,0 +1,7 @@
+aircraft_284.jpg	aircraft	290	235	355	291
+aircraft_284.jpg	aircraft	329	323	398	385
+aircraft_284.jpg	aircraft	559	393	616	451
+aircraft_284.jpg	aircraft	521	305	586	362
+aircraft_284.jpg	aircraft	468	213	542	285
+aircraft_284.jpg	aircraft	436	140	495	209
+aircraft_284.jpg	aircraft	633	282	663	323

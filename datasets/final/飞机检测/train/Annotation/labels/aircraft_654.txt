@@ -1,0 +1,7 @@
+aircraft_654.jpg	aircraft	508	250	564	300
+aircraft_654.jpg	aircraft	562	274	612	324
+aircraft_654.jpg	aircraft	307	369	361	435
+aircraft_654.jpg	aircraft	355	408	409	466
+aircraft_654.jpg	aircraft	411	430	474	498
+aircraft_654.jpg	aircraft	534	510	597	576
+aircraft_654.jpg	aircraft	717	624	768	691

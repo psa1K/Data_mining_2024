@@ -1,0 +1,11 @@
+aircraft_619.jpg	aircraft	28	722	77	776
+aircraft_619.jpg	aircraft	513	520	558	562
+aircraft_619.jpg	aircraft	633	532	671	567
+aircraft_619.jpg	aircraft	497	361	553	409
+aircraft_619.jpg	aircraft	536	394	592	440
+aircraft_619.jpg	aircraft	601	286	624	307
+aircraft_619.jpg	aircraft	643	320	667	342
+aircraft_619.jpg	aircraft	791	388	834	422
+aircraft_619.jpg	aircraft	822	352	870	388
+aircraft_619.jpg	aircraft	953	231	1006	268
+aircraft_619.jpg	aircraft	991	35	1019	54

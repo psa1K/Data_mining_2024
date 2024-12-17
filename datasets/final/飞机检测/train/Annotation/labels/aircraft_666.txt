@@ -1,0 +1,6 @@
+aircraft_666.jpg	aircraft	731	69	778	113
+aircraft_666.jpg	aircraft	656	187	710	236
+aircraft_666.jpg	aircraft	756	222	818	276
+aircraft_666.jpg	aircraft	559	370	613	424
+aircraft_666.jpg	aircraft	337	477	398	549
+aircraft_666.jpg	aircraft	188	723	252	804

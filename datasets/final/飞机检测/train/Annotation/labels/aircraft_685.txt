@@ -1,0 +1,2 @@
+aircraft_685.jpg	aircraft	573	369	646	444
+aircraft_685.jpg	aircraft	276	759	328	807

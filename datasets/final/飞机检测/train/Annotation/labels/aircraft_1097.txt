@@ -1,0 +1,9 @@
+aircraft_1097.jpg	aircraft	568	16	654	75
+aircraft_1097.jpg	aircraft	715	141	804	213
+aircraft_1097.jpg	aircraft	745	228	813	280
+aircraft_1097.jpg	aircraft	936	196	1000	243
+aircraft_1097.jpg	aircraft	457	186	514	229
+aircraft_1097.jpg	aircraft	445	228	510	274
+aircraft_1097.jpg	aircraft	408	283	463	333
+aircraft_1097.jpg	aircraft	355	342	424	397
+aircraft_1097.jpg	aircraft	117	738	196	811

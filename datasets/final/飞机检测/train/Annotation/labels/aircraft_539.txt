@@ -1,0 +1,7 @@
+aircraft_539.jpg	aircraft	476	35	567	86
+aircraft_539.jpg	aircraft	458	92	611	188
+aircraft_539.jpg	aircraft	480	196	595	261
+aircraft_539.jpg	aircraft	454	266	639	393
+aircraft_539.jpg	aircraft	503	401	618	475
+aircraft_539.jpg	aircraft	473	484	678	658
+aircraft_539.jpg	aircraft	493	689	651	818

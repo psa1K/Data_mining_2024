@@ -1,0 +1,16 @@
+aircraft_881.jpg	aircraft	627	99	678	127
+aircraft_881.jpg	aircraft	730	108	780	135
+aircraft_881.jpg	aircraft	436	373	496	426
+aircraft_881.jpg	aircraft	514	388	540	406
+aircraft_881.jpg	aircraft	531	391	564	417
+aircraft_881.jpg	aircraft	507	408	549	444
+aircraft_881.jpg	aircraft	544	421	607	483
+aircraft_881.jpg	aircraft	648	436	702	478
+aircraft_881.jpg	aircraft	964	418	987	441
+aircraft_881.jpg	aircraft	178	367	249	429
+aircraft_881.jpg	aircraft	174	432	219	472
+aircraft_881.jpg	aircraft	381	505	435	553
+aircraft_881.jpg	aircraft	442	528	495	573
+aircraft_881.jpg	aircraft	508	549	561	595
+aircraft_881.jpg	aircraft	571	570	625	618
+aircraft_881.jpg	aircraft	634	595	666	628

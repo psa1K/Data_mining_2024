@@ -1,0 +1,2 @@
+aircraft_676.jpg	aircraft	476	309	561	369
+aircraft_676.jpg	aircraft	506	403	552	447

@@ -1,0 +1,7 @@
+aircraft_415.jpg	aircraft	231	325	307	405
+aircraft_415.jpg	aircraft	411	331	468	382
+aircraft_415.jpg	aircraft	648	351	699	405
+aircraft_415.jpg	aircraft	387	528	433	582
+aircraft_415.jpg	aircraft	438	522	496	583
+aircraft_415.jpg	aircraft	597	537	652	603
+aircraft_415.jpg	aircraft	657	550	702	600

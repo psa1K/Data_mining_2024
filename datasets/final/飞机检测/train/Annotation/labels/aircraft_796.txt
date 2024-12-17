@@ -1,0 +1,4 @@
+aircraft_796.jpg	aircraft	134	55	171	81
+aircraft_796.jpg	aircraft	143	70	170	91
+aircraft_796.jpg	aircraft	139	86	180	106
+aircraft_796.jpg	aircraft	500	446	571	494

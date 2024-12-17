@@ -1,0 +1,10 @@
+aircraft_966.jpg	aircraft	325	241	372	286
+aircraft_966.jpg	aircraft	507	331	603	415
+aircraft_966.jpg	aircraft	616	327	693	400
+aircraft_966.jpg	aircraft	925	283	988	345
+aircraft_966.jpg	aircraft	264	600	372	709
+aircraft_966.jpg	aircraft	376	589	438	651
+aircraft_966.jpg	aircraft	640	573	706	646
+aircraft_966.jpg	aircraft	168	733	267	835
+aircraft_966.jpg	aircraft	324	757	390	825
+aircraft_966.jpg	aircraft	472	739	534	807

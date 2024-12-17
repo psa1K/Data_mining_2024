@@ -1,0 +1,12 @@
+aircraft_98.jpg	aircraft	951	25	990	57
+aircraft_98.jpg	aircraft	919	46	954	76
+aircraft_98.jpg	aircraft	1008	216	1041	261
+aircraft_98.jpg	aircraft	735	39	780	70
+aircraft_98.jpg	aircraft	544	117	604	156
+aircraft_98.jpg	aircraft	663	219	709	265
+aircraft_98.jpg	aircraft	703	261	760	304
+aircraft_98.jpg	aircraft	618	420	669	483
+aircraft_98.jpg	aircraft	421	529	498	586
+aircraft_98.jpg	aircraft	451	604	535	673
+aircraft_98.jpg	aircraft	658	750	744	828
+aircraft_98.jpg	aircraft	763	708	828	783

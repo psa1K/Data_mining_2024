@@ -1,0 +1,3 @@
+aircraft_1085.jpg	aircraft	607	292	723	372
+aircraft_1085.jpg	aircraft	543	478	663	582
+aircraft_1085.jpg	aircraft	487	586	630	706

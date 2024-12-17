@@ -1,0 +1,2 @@
+aircraft_868.jpg	aircraft	690	262	744	304
+aircraft_868.jpg	aircraft	655	352	717	399

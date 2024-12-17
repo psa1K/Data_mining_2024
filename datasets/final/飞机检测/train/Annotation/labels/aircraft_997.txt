@@ -1,0 +1,2 @@
+aircraft_997.jpg	aircraft	457	672	559	772
+aircraft_997.jpg	aircraft	205	150	246	183

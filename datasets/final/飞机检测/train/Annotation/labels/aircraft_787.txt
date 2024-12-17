@@ -1,0 +1,4 @@
+aircraft_787.jpg	aircraft	516	526	595	607
+aircraft_787.jpg	aircraft	595	523	681	601
+aircraft_787.jpg	aircraft	688	523	771	601
+aircraft_787.jpg	aircraft	769	526	859	607

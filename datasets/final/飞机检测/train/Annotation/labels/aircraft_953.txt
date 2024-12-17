@@ -1,0 +1,6 @@
+aircraft_953.jpg	aircraft	361	196	397	226
+aircraft_953.jpg	aircraft	472	141	529	178
+aircraft_953.jpg	aircraft	610	213	673	276
+aircraft_953.jpg	aircraft	747	460	793	507
+aircraft_953.jpg	aircraft	540	552	586	595
+aircraft_953.jpg	aircraft	478	655	546	733

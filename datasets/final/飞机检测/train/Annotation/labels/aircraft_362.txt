@@ -1,0 +1,2 @@
+aircraft_362.jpg	aircraft	60	237	113	277
+aircraft_362.jpg	aircraft	751	293	854	380

@@ -1,0 +1,4 @@
+aircraft_579.jpg	aircraft	74	219	119	271
+aircraft_579.jpg	aircraft	742	316	799	375
+aircraft_579.jpg	aircraft	879	336	942	387
+aircraft_579.jpg	aircraft	942	330	1017	400

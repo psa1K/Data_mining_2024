@@ -1,0 +1,2 @@
+aircraft_155.jpg	aircraft	24	390	102	465
+aircraft_155.jpg	aircraft	948	328	1015	390

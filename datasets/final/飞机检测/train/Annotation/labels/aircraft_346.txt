@@ -1,0 +1,6 @@
+aircraft_346.jpg	aircraft	197	264	261	321
+aircraft_346.jpg	aircraft	342	313	392	372
+aircraft_346.jpg	aircraft	487	362	535	422
+aircraft_346.jpg	aircraft	550	380	593	440
+aircraft_346.jpg	aircraft	608	400	655	462
+aircraft_346.jpg	aircraft	793	414	867	483

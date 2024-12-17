@@ -1,0 +1,10 @@
+aircraft_825.jpg	aircraft	151	71	198	112
+aircraft_825.jpg	aircraft	211	151	291	211
+aircraft_825.jpg	aircraft	308	137	357	179
+aircraft_825.jpg	aircraft	417	72	489	125
+aircraft_825.jpg	aircraft	478	181	527	223
+aircraft_825.jpg	aircraft	257	277	342	346
+aircraft_825.jpg	aircraft	137	326	240	418
+aircraft_825.jpg	aircraft	476	581	538	641
+aircraft_825.jpg	aircraft	711	654	816	769
+aircraft_825.jpg	aircraft	863	544	941	618

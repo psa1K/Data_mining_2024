@@ -1,0 +1,5 @@
+aircraft_996.jpg	aircraft	499	606	564	676
+aircraft_996.jpg	aircraft	594	540	658	607
+aircraft_996.jpg	aircraft	616	486	690	546
+aircraft_996.jpg	aircraft	925	265	967	301
+aircraft_996.jpg	aircraft	957	238	996	268

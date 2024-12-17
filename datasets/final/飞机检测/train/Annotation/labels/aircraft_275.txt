@@ -1,0 +1,5 @@
+aircraft_275.jpg	aircraft	211	339	274	394
+aircraft_275.jpg	aircraft	325	452	393	524
+aircraft_275.jpg	aircraft	441	325	517	404
+aircraft_275.jpg	aircraft	621	92	675	152
+aircraft_275.jpg	aircraft	678	133	741	202

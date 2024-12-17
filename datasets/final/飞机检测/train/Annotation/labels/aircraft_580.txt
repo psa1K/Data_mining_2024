@@ -1,0 +1,12 @@
+aircraft_580.jpg	aircraft	196	211	271	264
+aircraft_580.jpg	aircraft	259	246	309	285
+aircraft_580.jpg	aircraft	199	277	274	333
+aircraft_580.jpg	aircraft	99	375	147	433
+aircraft_580.jpg	aircraft	133	406	195	460
+aircraft_580.jpg	aircraft	100	442	132	487
+aircraft_580.jpg	aircraft	190	426	255	480
+aircraft_580.jpg	aircraft	256	372	333	433
+aircraft_580.jpg	aircraft	441	379	516	451
+aircraft_580.jpg	aircraft	253	589	330	690
+aircraft_580.jpg	aircraft	714	657	778	744
+aircraft_580.jpg	aircraft	592	261	612	286

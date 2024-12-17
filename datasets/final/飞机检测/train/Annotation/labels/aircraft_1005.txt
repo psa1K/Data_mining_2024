@@ -1,0 +1,6 @@
+aircraft_1005.jpg	aircraft	579	4	621	34
+aircraft_1005.jpg	aircraft	643	12	700	51
+aircraft_1005.jpg	aircraft	781	67	829	106
+aircraft_1005.jpg	aircraft	358	46	414	87
+aircraft_1005.jpg	aircraft	504	97	570	148
+aircraft_1005.jpg	aircraft	208	796	298	880

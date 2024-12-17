@@ -1,0 +1,5 @@
+aircraft_764.jpg	aircraft	48	190	84	216
+aircraft_764.jpg	aircraft	25	301	90	360
+aircraft_764.jpg	aircraft	295	385	363	451
+aircraft_764.jpg	aircraft	729	496	808	582
+aircraft_764.jpg	aircraft	906	588	985	670

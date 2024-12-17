@@ -1,0 +1,2 @@
+aircraft_988.jpg	aircraft	444	533	515	595
+aircraft_988.jpg	aircraft	591	567	612	590

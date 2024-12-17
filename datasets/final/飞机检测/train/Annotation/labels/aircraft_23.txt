@@ -1,0 +1,4 @@
+aircraft_23.jpg	aircraft	241	129	376	261
+aircraft_23.jpg	aircraft	231	270	361	384
+aircraft_23.jpg	aircraft	232	394	361	523
+aircraft_23.jpg	aircraft	480	519	595	658

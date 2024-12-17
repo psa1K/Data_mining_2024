@@ -1,0 +1,4 @@
+aircraft_940.jpg	aircraft	171	220	213	261
+aircraft_940.jpg	aircraft	277	226	328	271
+aircraft_940.jpg	aircraft	457	319	556	426
+aircraft_940.jpg	aircraft	816	261	874	315

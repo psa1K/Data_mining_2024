@@ -1,0 +1,12 @@
+aircraft_175.jpg	aircraft	78	822	213	910
+aircraft_175.jpg	aircraft	267	643	336	772
+aircraft_175.jpg	aircraft	472	658	544	769
+aircraft_175.jpg	aircraft	670	700	736	787
+aircraft_175.jpg	aircraft	766	678	846	792
+aircraft_175.jpg	aircraft	882	453	960	517
+aircraft_175.jpg	aircraft	586	448	645	516
+aircraft_175.jpg	aircraft	120	409	181	469
+aircraft_175.jpg	aircraft	193	183	252	253
+aircraft_175.jpg	aircraft	514	226	564	283
+aircraft_175.jpg	aircraft	673	237	724	291
+aircraft_175.jpg	aircraft	753	240	804	294

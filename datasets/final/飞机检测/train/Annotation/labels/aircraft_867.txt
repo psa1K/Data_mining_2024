@@ -1,0 +1,4 @@
+aircraft_867.jpg	aircraft	303	150	427	238
+aircraft_867.jpg	aircraft	264	249	384	342
+aircraft_867.jpg	aircraft	111	702	190	781
+aircraft_867.jpg	aircraft	618	487	745	627

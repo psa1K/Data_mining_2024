@@ -1,0 +1,4 @@
+aircraft_623.jpg	aircraft	469	417	537	477
+aircraft_623.jpg	aircraft	516	512	576	575
+aircraft_623.jpg	aircraft	649	456	696	491
+aircraft_623.jpg	aircraft	620	477	696	542

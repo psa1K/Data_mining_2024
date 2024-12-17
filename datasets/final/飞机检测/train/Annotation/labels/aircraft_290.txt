@@ -1,0 +1,2 @@
+aircraft_290.jpg	aircraft	445	349	528	428
+aircraft_290.jpg	aircraft	363	485	439	569

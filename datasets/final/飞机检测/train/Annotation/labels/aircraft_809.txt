@@ -1,0 +1,14 @@
+aircraft_809.jpg	aircraft	690	44	721	76
+aircraft_809.jpg	aircraft	700	85	731	120
+aircraft_809.jpg	aircraft	567	239	610	282
+aircraft_809.jpg	aircraft	571	280	618	319
+aircraft_809.jpg	aircraft	576	317	624	360
+aircraft_809.jpg	aircraft	586	416	640	473
+aircraft_809.jpg	aircraft	645	414	698	467
+aircraft_809.jpg	aircraft	700	410	749	464
+aircraft_809.jpg	aircraft	902	400	954	445
+aircraft_809.jpg	aircraft	317	547	374	615
+aircraft_809.jpg	aircraft	239	580	301	650
+aircraft_809.jpg	aircraft	168	613	243	699
+aircraft_809.jpg	aircraft	92	670	142	721
+aircraft_809.jpg	aircraft	611	730	664	796

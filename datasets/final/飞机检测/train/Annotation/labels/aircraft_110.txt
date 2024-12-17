@@ -1,0 +1,9 @@
+aircraft_110.jpg	aircraft	21	6	99	60
+aircraft_110.jpg	aircraft	45	57	120	108
+aircraft_110.jpg	aircraft	75	108	150	159
+aircraft_110.jpg	aircraft	91	166	181	226
+aircraft_110.jpg	aircraft	256	157	351	225
+aircraft_110.jpg	aircraft	181	27	259	88
+aircraft_110.jpg	aircraft	150	3	217	31
+aircraft_110.jpg	aircraft	616	174	709	259
+aircraft_110.jpg	aircraft	717	175	829	259
