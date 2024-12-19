@@ -219,7 +219,39 @@ $$LBP=\sum_{p=0}^{P−1} s(g_p−g_c)\cdot 2^p,$$
     \item P 是邻域像素数（通常为 8）。
 \end{itemize}
 \section{实验结果与分析}
-\par 通过两种方法下生成的\href{https://github.com/psa1K/Data_mining_2024/tree/main/datasets/exp1/output}{特征图}可以看出，两类图有明显不同的纹理特征。
+\par 通过两种方法下生成的特征图可以看出，两类图有明显不同的纹理特征。图~\ref{1.1}\ 与图~\ref{1.2}\ 为灰度共生矩阵下的图例；图~\ref{1.3}\ 与图~\ref{1.4}\ 为局部二值模式下的图例。全部图片请见\href{https://github.com/psa1K/Data_mining_2024/tree/main/datasets/exp1/output}{特征图}。
+\begin{figure}[htbp]
+    \centering
+    \begin{minipage}{0.42\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{../datasets/exp1/output/glcm/cloud/1.png}
+        \caption{云的灰度共生矩阵图}
+        \label{1.1}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.42\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{../datasets/exp1/output/glcm/forest/1.png}
+        \caption{森林的灰度共生矩阵图}
+        \label{1.2}
+    \end{minipage}
+\end{figure}
+\begin{figure}[htbp]
+    \centering
+    \begin{minipage}{0.42\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{../datasets/exp1/output/lbp/cloud/1.png}
+        \caption{云的局部二值模式图}
+        \label{1.3}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.42\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{../datasets/exp1/output/lbp/forest/1.png}
+        \caption{森林的局部二值模式图}
+        \label{1.4}
+    \end{minipage}
+\end{figure}
 \section{实验代码}
 \begin{lstlisting}[language=Python]
 import os
@@ -399,7 +431,6 @@ $$g(\boldsymbol{x})=(m_{1})^{\prime}(\boldsymbol{x}-(m_{1}-m_{2})/2),$$
         \caption{测试集与决策面}
         \label{2.2}
     \end{minipage}
-    \label{fig:train_test_comparison}
 \end{figure}
 \section{实验代码}
 \begin{lstlisting}[language=Python]
