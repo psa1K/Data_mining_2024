@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# 实验生成产物（output 目录）
+datasets/exp1/output/
+datasets/exp2/output/
+
+# 实验脚本生成的图片
+datasets/exp3/accuracy.png
+datasets/exp4/accuracy+depth.png
+datasets/exp4/decision_tree.png
+datasets/exp5/auc.png
+
+# 飞机检测输出
+datasets/final/飞机检测/detected_aircraft_*.jpg
