@@ -10,17 +10,12 @@ os.chdir(os.path.dirname(os.path.abspath(__file__)))  # 更改当前工作目录
 train_path = "train.csv"
 test_path = "test.csv"
 
-train = pd.read_csv(train_path, index_col=0)
-test = pd.read_csv(test_path, index_col=0)
-
 
 def Pre_process(path):
+    """读取数据，返回原始特征 X 和标签 y（不做归一化）。"""
     data = pd.read_csv(path, index_col=0)
     X = data.drop("Class", axis=1).values
     y = data["Class"].values
-    X = scaler.fit_transform(X)
-    X = torch.from_numpy(X).float()
-    y = torch.from_numpy(y).long()
     return X, y
 
 
@@ -40,6 +35,16 @@ class BpNet(nn.Module):
 scaler = StandardScaler()
 X_train, y_train = Pre_process(train_path)
 X_test, y_test = Pre_process(test_path)
+
+# 归一化：只在训练集上 fit（学习均值/方差），测试集仅 transform（沿用训练集统计量）
+# 避免测试集的统计量泄漏进评估，保证指标反映真实泛化能力
+X_train = scaler.fit_transform(X_train)
+X_test = scaler.transform(X_test)
+
+X_train = torch.from_numpy(X_train).float()
+y_train = torch.from_numpy(y_train).long()
+X_test = torch.from_numpy(X_test).float()
+y_test = torch.from_numpy(y_test).long()
 
 seed = 233
 epochs = 100
