@@ -9,8 +9,10 @@ Data_mining_2024/
 ├── datasets/            # 数据集 + 实验/期末代码
 │   ├── exp1/ ~ exp5/    # 五次课程实验（各含 expN.md 题目说明 + parse.py 实现 + 数据）
 │   └── final/           # 期末大作业（六个子任务）
-├── demos/               # 报告 LaTeX 模板（report.tex）
-└── slides/              # 课程课件 PDF
+├── demos/               # 报告（report.tex + report.pdf）
+│   └── figures/         # 报告引用的结果图片
+├── slides/              # 课程课件 PDF
+└── requirements.txt     # Python 依赖清单
 ```
 
 ## 课程实验（exp1 ~ exp5）
@@ -36,7 +38,15 @@ Data_mining_2024/
 | 模型对比 | train.csv / test.csv |
 | 特征选择 | training_data.csv |
 | 福字识别 | 图像（.png） |
-| 飞机检测 | train / test + parse.py / parse.ipynb |
+| 飞机检测 | train / test + parse.py |
+
+## 安装依赖
+
+```bash
+pip install -r requirements.txt
+# 或使用 uv
+uv pip install -r requirements.txt
+```
 
 ## 运行方式
 
@@ -49,9 +59,14 @@ python parse.py
 
 ## 报告
 
-使用 `demos/report.tex` 的 LaTeX 模板撰写实验与期末报告。
+报告使用 LaTeX（XeLaTeX 编译）撰写，源文件为 `demos/report.tex`，报告引用的图片统一放在 `demos/figures/` 下：
+
+```bash
+# 在 demos/ 目录下编译
+xelatex report.tex && xelatex report.tex   # 跑两遍以生成交叉引用
+```
 
 ## 备注
 
-- 仓库包含较大数据集（约 160 MB），请勿随意提交生成的输出文件（`output/`、图片、中间产物）。
+- 仓库包含较大数据集（约 160 MB），运行实验生成的产物（`output/`、图片、`__pycache__`）已被 `.gitignore` 忽略，不会进入版本控制。
 - 题目说明与课件为中文，保持原文。
