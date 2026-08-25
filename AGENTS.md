@@ -11,7 +11,7 @@ and its data.
   - `parse.py` — solution script (pandas / sklearn / matplotlib)
   - data files: `train.csv` / `test.csv`, or image datasets (`.jpg` / `.xml` / `.txt`)
 - `datasets/final/` — final project, split into six sub-projects (区域分割 / 台风预测 / 模型对比 / 特征选择 / 福字识别 / 飞机检测)
-- `demos/` — LaTeX report template (`template.tex`) and PDFs
+- `demos/` — LaTeX report template (`report.tex`) and PDFs
 - `slides/` — course slide PDFs (Chinese)
 
 ## Conventions
@@ -20,7 +20,7 @@ and its data.
 - Solutions are single-file Python scripts named `parse.py`, runnable from
   their own directory (`os.chdir` is used inside the script).
 - Use pandas for data handling, sklearn for modeling, matplotlib for plots.
-- Reports are written in LaTeX using the `demos/template.tex` template.
+- Reports are written in LaTeX using the `demos/report.tex` template.
 - The repo intentionally contains large datasets (~160 MB). Be mindful of repo
   size: do not commit new generated outputs (`output/`, figures, intermediate
   files) unless required.
