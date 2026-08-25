@@ -8,10 +8,11 @@ and its data.
 
 - `datasets/exp1..exp5/` — weekly experiments. Each contains:
   - `expN.md` — task description (Chinese)
+  - `README.md` — dataset provenance (English)
   - `parse.py` — solution script (pandas / sklearn / matplotlib)
   - data files: `train.csv` / `test.csv`, or image datasets (`.jpg` / `.xml` / `.txt`)
-- `datasets/final/` — final project, split into six sub-projects (区域分割 / 台风预测 / 模型对比 / 特征选择 / 福字识别 / 飞机检测)
-- `demos/` — LaTeX report template (`report.tex`) and PDFs
+- `datasets/final/` — final project, split into six sub-projects (区域分割 / 台风预测 / 模型对比 / 特征选择 / 福字识别 / 飞机检测), documented in its `README.md`
+- `demos/` — LaTeX report (`report.tex`) and compiled PDF, with result images in `demos/figures/`
 - `slides/` — course slide PDFs (Chinese)
 
 ## Conventions
@@ -27,9 +28,10 @@ and its data.
 
 ## Commands
 
+- Install dependencies: `pip install -r requirements.txt` (or `uv pip install -r requirements.txt`)
 - Run an experiment script: `python parse.py` (inside its own directory)
-- No package manager or test suite; verify changes by running the affected
-  `parse.py` and confirming it produces expected output.
+- Compile the report: `xelatex report.tex` (twice, from `demos/`)
+- No test suite; verify changes by running the affected `parse.py` and confirming it produces expected output.
 
 ## Git Workflow
 
