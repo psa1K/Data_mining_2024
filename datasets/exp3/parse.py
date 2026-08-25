@@ -40,9 +40,12 @@ def Pre_Process(df, keywords, encoder, hour_cols, day_cols, district_cols):
     crime_type_encode = encoder.transform(df["Category"])
 
     # one-hot 编码后按训练集列结构对齐（test 缺失的类别补 0，多余的丢弃）
-    hour = pd.get_dummies(pd.to_datetime(df["Dates"]).dt.hour)
-    hour = hour.reindex(columns=hour_cols, fill_value=0)
-    day = pd.get_dummies(df["DayOfWeek"]).reindex(columns=day_cols, fill_value=0)
+    hour = pd.get_dummies(pd.to_datetime(df["Dates"]).dt.hour).reindex(
+        columns=hour_cols, fill_value=0
+    )
+    day = pd.get_dummies(df["DayOfWeek"]).reindex(
+        columns=day_cols, fill_value=0
+    )
     police_district = pd.get_dummies(df["PdDistrict"]).reindex(
         columns=district_cols, fill_value=0
     )
