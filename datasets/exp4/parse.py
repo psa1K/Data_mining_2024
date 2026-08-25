@@ -11,6 +11,7 @@ os.chdir(os.path.dirname(os.path.abspath(__file__)))  # 更改当前工作目录
 
 train_path = "train.csv"
 test_path = "test.csv"
+os.makedirs("output", exist_ok=True)
 
 
 def keyword_extract(path="train.csv"):
@@ -105,7 +106,7 @@ lines, labels = ax1.get_legend_handles_labels()
 lines2, labels2 = ax2.get_legend_handles_labels()
 ax1.legend(lines + lines2, labels + labels2, loc="upper left")
 # plt.show()
-plt.savefig("accuracy+depth.png")
+plt.savefig("output/accuracy+depth.png")
 # 绘制决策树
 
 plt.figure(figsize=(10, 10))
@@ -116,4 +117,4 @@ plot_tree(
     class_names=list(train_df["Category"].unique()),
     feature_names=list(train.drop("Crime type", axis=1).columns),
 )
-plt.savefig("decision_tree.png")
+plt.savefig("output/decision_tree.png")
