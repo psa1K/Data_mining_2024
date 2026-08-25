@@ -6,8 +6,11 @@ __pycache__/
 # 实验生成产物（output 目录）
 datasets/exp1/output/
 datasets/exp2/output/
+datasets/exp3/output/
+datasets/exp4/output/
+datasets/exp5/output/
 
-# 实验脚本生成的图片
+# 实验脚本生成的图片（旧产物，新版本已输出到 output/）
 datasets/exp3/accuracy.png
 datasets/exp4/accuracy+depth.png
 datasets/exp4/decision_tree.png

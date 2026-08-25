@@ -9,6 +9,7 @@ from sklearn.metrics import precision_recall_curve, auc
 os.chdir(os.path.dirname(os.path.abspath(__file__)))  # 更改当前工作目录为脚本所在目录
 train_path = "train.csv"
 test_path = "test.csv"
+os.makedirs("output", exist_ok=True)
 
 
 def Pre_process(path):
@@ -82,4 +83,4 @@ plt.xlabel("Recall")
 plt.ylabel("Precision")
 plt.legend(loc="best")
 # plt.show()
-plt.savefig("auc.png")
+plt.savefig("output/auc.png")

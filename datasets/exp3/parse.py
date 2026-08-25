@@ -10,6 +10,7 @@ os.chdir(os.path.dirname(os.path.abspath(__file__)))  # 更改当前工作目录
 
 train_path = "train.csv"
 test_path = "test.csv"
+os.makedirs("output", exist_ok=True)
 
 
 def keyword_extract(path="train.csv"):
@@ -103,4 +104,4 @@ plt.plot([0.00, points[1][0]], [points[1][1], points[1][1]], color="r", linestyl
 plt.xlim(0, len(keywords) + 1)
 plt.ylim(0.90, 1.01)
 # plt.show()
-plt.savefig("accuracy.png", bbox_inches="tight")
+plt.savefig("output/accuracy.png", bbox_inches="tight")
