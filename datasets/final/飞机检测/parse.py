@@ -68,8 +68,7 @@ def get_train_data(path):
 def get_hog(imgs):
     """计算图像的 HOG 特征。
 
-    使用 scikit-image 实现（cv2.HOGDescriptor 已在 opencv-python 5.x 中被移除），
-    参数与 OpenCV 版一致：cell=8x8、block=2x2 cells、9 方向直方图、L2-Hys 归一化。
+    参数：cell=8x8、block=2x2 cells、9 方向直方图、L2-Hys 归一化。
     """
     return [
         skimage_hog(

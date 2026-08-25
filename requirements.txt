@@ -9,6 +9,5 @@ torch
 Pillow
 scikit-image
 
-# OpenCV 仅用于图像读取与绘制（cv2.HOGDescriptor 已在 opencv-python 5.x 移除，
-# 飞机检测改用 skimage.feature.hog 实现，因此无需 contrib 变体）。
+# OpenCV 仅用于图像读取与绘制；HOG 特征由 scikit-image 实现。
 opencv-python-headless
