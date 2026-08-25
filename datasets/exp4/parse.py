@@ -25,20 +25,28 @@ def keyword_extract(path="train.csv"):
     return keywords
 
 
-def Pre_Process(path, keywords):
-    df = pd.read_csv(path)
-
-    # 将Category进行整数编码
+def build_encoder(df):
+    """在训练集上学习类别编码，返回共享的标签编码器与 one-hot 规范列名。"""
     encoder = preprocessing.LabelEncoder()
-    crime_type_encode = encoder.fit_transform(df["Category"])
+    encoder.fit(df["Category"])
 
-    # 将时间进行one-hot编码
-    hour = pd.to_datetime(df["Dates"]).dt.hour
-    hour = pd.get_dummies(hour)
-    day = pd.get_dummies(df["DayOfWeek"])
+    hour_cols = pd.get_dummies(pd.to_datetime(df["Dates"]).dt.hour).columns
+    day_cols = pd.get_dummies(df["DayOfWeek"]).columns
+    district_cols = pd.get_dummies(df["PdDistrict"]).columns
+    return encoder, hour_cols, day_cols, district_cols
 
-    # 将所属警区进行one-hot编码
-    police_district = pd.get_dummies(df["PdDistrict"])
+
+def Pre_Process(df, keywords, encoder, hour_cols, day_cols, district_cols):
+    # 标签编码：用训练集拟合好的编码器 transform（不再重新 fit，保证映射一致）
+    crime_type_encode = encoder.transform(df["Category"])
+
+    # one-hot 编码后按训练集列结构对齐（test 缺失的类别补 0，多余的丢弃）
+    hour = pd.get_dummies(pd.to_datetime(df["Dates"]).dt.hour)
+    hour = hour.reindex(columns=hour_cols, fill_value=0)
+    day = pd.get_dummies(df["DayOfWeek"]).reindex(columns=day_cols, fill_value=0)
+    police_district = pd.get_dummies(df["PdDistrict"]).reindex(
+        columns=district_cols, fill_value=0
+    )
 
     # 利用 TF-IDF 特征进行编码
     matrix = pd.DataFrame(0, index=df.index, columns=keywords)
@@ -56,12 +64,20 @@ def Pre_Process(path, keywords):
     return data
 
 
+train_df = pd.read_csv(train_path)
+test_df = pd.read_csv(test_path)
 keywords = keyword_extract()
+encoder, hour_cols, day_cols, district_cols = build_encoder(train_df)
+
 acc = []
 depth = []
 for k in range(0, len(keywords) + 1):
-    train = Pre_Process(train_path, keywords[:k])
-    test = Pre_Process(test_path, keywords[:k])
+    train = Pre_Process(
+        train_df, keywords[:k], encoder, hour_cols, day_cols, district_cols
+    )
+    test = Pre_Process(
+        test_df, keywords[:k], encoder, hour_cols, day_cols, district_cols
+    )
     # 训练模型
     model = DecisionTreeClassifier()
     model.fit(train.drop("Crime type", axis=1), train["Crime type"])
@@ -94,7 +110,7 @@ plot_tree(
     model,
     filled=True,
     rounded=True,
-    class_names=list(pd.read_csv(train_path)["Category"].unique()),
+    class_names=list(train_df["Category"].unique()),
     feature_names=list(train.drop("Crime type", axis=1).columns),
 )
 plt.savefig("decision_tree.png")
