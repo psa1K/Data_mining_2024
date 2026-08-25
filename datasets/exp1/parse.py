@@ -9,33 +9,25 @@ plt.rcParams["axes.unicode_minus"] = False  # 正负号
 
 # 更改当前工作目录为脚本所在目录
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
-c_path = "./cloud/"
-f_path = "./forest/"
 
-os.makedirs("./output/glcm/", exist_ok=True)  # 创建输出文件夹
-os.makedirs("./output/lbp/", exist_ok=True)
+# 输入/输出目录
+input_dirs = ["cloud", "forest"]
+output_dirs = [
+    "output/glcm/cloud",
+    "output/glcm/forest",
+    "output/lbp/cloud",
+    "output/lbp/forest",
+]
+for d in output_dirs:
+    os.makedirs(d, exist_ok=True)
 
-c_name = [c_path + i for i in os.listdir(c_path)]
-f_name = [f_path + i for i in os.listdir(f_path)]
-
-
-def show_grey(root=c_name):
-    for n, i in enumerate(c_name):
-        plt.subplot(2, 5, n + 1)
-        img = Image.open(i)
-        img = img.convert("L")  # 转为灰度图
-        plt.imshow(img, cmap="gray")  # 显示灰度图
-        plt.axis("off")  # 不显示坐标轴
-    plt.show()
-
-
-def get_mat(root):
-    for n, i in enumerate(root):
-        # plt.subplot(2, 5, n + 1)
-        img = Image.open(i)
+# 用 basename 只保留文件名，避免保存路径带目录前缀
+def get_mat(names, in_dir, out_dir):
+    for i in names:
+        img = Image.open(os.path.join(in_dir, i))
         img = img.convert("L")  # 转为灰度图
         img = np.array(img)  # 转为ndarray
-        yield i, img
+        yield i, out_dir, img
 
 
 # 计算灰度共生矩阵(gray-level co-occurrence matrix)
@@ -66,8 +58,8 @@ def get_glcm(img, angle=0, distance=1, gray_levels=256):
 
 
 # 绘制灰度共生矩阵
-def get_glcm_fig(root, angles=[0, 45, 90, 135]):
-    for i, img in get_mat(root):
+def get_glcm_fig(names, in_dir, out_dir, angles=[0, 45, 90, 135]):
+    for i, out, img in get_mat(names, in_dir, out_dir):
         glcms = []  # 存储各角度的 GLCM 图像
         for angle in angles:
             glcm = get_glcm(img, angle=angle)
@@ -95,7 +87,7 @@ def get_glcm_fig(root, angles=[0, 45, 90, 135]):
 
             canvas.paste(glcm, (x_offset, y_offset + title_height))
 
-        canvas.save(f"./output/glcm/{i}")
+        canvas.save(os.path.join(out, i))
 
 
 # 计算局部二值模式(local binary pattern)
@@ -124,17 +116,17 @@ def get_lbp(img):
 
 
 # 绘制局部二值模式
-def get_lbp_fig(root):
-    for i, img in get_mat(root):
+def get_lbp_fig(names, in_dir, out_dir):
+    for i, out, img in get_mat(names, in_dir, out_dir):
         lbp = get_lbp(img)
-        Image.fromarray(lbp.astype(np.uint8)).save(f"./output/lbp/{i}")
+        Image.fromarray(lbp.astype(np.uint8)).save(os.path.join(out, i))
 
 
 def main():
-    roots = [c_name, f_name]
-    for root in roots:
-        get_glcm_fig(root)
-        get_lbp_fig(root)
+    for in_dir in input_dirs:
+        names = os.listdir(in_dir)
+        get_glcm_fig(names, in_dir, f"output/glcm/{in_dir}")
+        get_lbp_fig(names, in_dir, f"output/lbp/{in_dir}")
 
 
 if __name__ == "__main__":
