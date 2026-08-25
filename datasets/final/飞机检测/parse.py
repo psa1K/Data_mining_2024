@@ -6,6 +6,7 @@ import xml.etree.ElementTree as ET
 from sklearn.svm import SVC
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
+from skimage.feature import hog as skimage_hog
 
 random.seed(233)
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
@@ -65,19 +66,21 @@ def get_train_data(path):
 
 
 def get_hog(imgs):
-    """计算图像的 HOG 特征。"""
-    block_size = (16, 16)  # 块大小(为单位进行归一化)
-    block_stride = (8, 8)  # 块步长
-    cell_size = (8, 8)  # 单元格大小
-    nbins = 9  # 梯度方向的直方图 bins 数
-    hog = cv2.HOGDescriptor(
-        _winSize=WINDOW_SIZE,
-        _blockSize=block_size,
-        _blockStride=block_stride,
-        _cellSize=cell_size,
-        _nbins=nbins,
-    )
-    return [hog.compute(img) for img in imgs]
+    """计算图像的 HOG 特征。
+
+    使用 scikit-image 实现（cv2.HOGDescriptor 已在 opencv-python 5.x 中被移除），
+    参数与 OpenCV 版一致：cell=8x8、block=2x2 cells、9 方向直方图、L2-Hys 归一化。
+    """
+    return [
+        skimage_hog(
+            img,
+            orientations=9,
+            pixels_per_cell=(8, 8),
+            cells_per_block=(2, 2),
+            block_norm="L2-Hys",
+        )
+        for img in imgs
+    ]
 
 
 def sliding_window(image, step_size, window_size):

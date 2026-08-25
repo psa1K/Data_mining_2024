@@ -7,7 +7,8 @@ matplotlib
 scikit-learn
 torch
 Pillow
+scikit-image
 
-# 飞机检测使用 cv2.HOGDescriptor，该接口在 opencv-python（主包）5.x 中已被移除，
-# 仅存在于 opencv-contrib-python(-headless) 中，因此必须安装 contrib 变体。
-opencv-contrib-python-headless>=5.0
+# OpenCV 仅用于图像读取与绘制（cv2.HOGDescriptor 已在 opencv-python 5.x 移除，
+# 飞机检测改用 skimage.feature.hog 实现，因此无需 contrib 变体）。
+opencv-python-headless
