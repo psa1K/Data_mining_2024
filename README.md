@@ -9,7 +9,7 @@ Data_mining_2024/
 ├── datasets/            # 数据集 + 实验/期末代码
 │   ├── exp1/ ~ exp5/    # 五次课程实验（各含 expN.md 题目说明 + parse.py 实现 + 数据）
 │   └── final/           # 期末大作业（六个子任务）
-├── demos/               # 报告 LaTeX 模板（template.tex / template.docx）
+├── demos/               # 报告 LaTeX 模板（report.tex）
 └── slides/              # 课程课件 PDF
 ```
 
@@ -49,7 +49,7 @@ python parse.py
 
 ## 报告
 
-使用 `demos/template.tex` 的 LaTeX 模板撰写实验与期末报告。
+使用 `demos/report.tex` 的 LaTeX 模板撰写实验与期末报告。
 
 ## 备注
 
