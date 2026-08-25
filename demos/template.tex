@@ -265,33 +265,25 @@ plt.rcParams["axes.unicode_minus"] = False  # 正负号
 
 # 更改当前工作目录为脚本所在目录
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
-c_path = "./cloud/"
-f_path = "./forest/"
 
-os.makedirs("./output/glcm/", exist_ok=True)  # 创建输出文件夹
-os.makedirs("./output/lbp/", exist_ok=True)
+# 输入/输出目录
+input_dirs = ["cloud", "forest"]
+output_dirs = [
+    "output/glcm/cloud",
+    "output/glcm/forest",
+    "output/lbp/cloud",
+    "output/lbp/forest",
+]
+for d in output_dirs:
+    os.makedirs(d, exist_ok=True)
 
-c_name = [c_path + i for i in os.listdir(c_path)]
-f_name = [f_path + i for i in os.listdir(f_path)]
-
-
-def show_grey(root=c_name):
-    for n, i in enumerate(c_name):
-        plt.subplot(2, 5, n + 1)
-        img = Image.open(i)
-        img = img.convert("L")  # 转为灰度图
-        plt.imshow(img, cmap="gray")  # 显示灰度图
-        plt.axis("off")  # 不显示坐标轴
-    plt.show()
-
-
-def get_mat(root):
-    for n, i in enumerate(root):
-        # plt.subplot(2, 5, n + 1)
-        img = Image.open(i)
+# 用 basename 只保留文件名，避免保存路径带目录前缀
+def get_mat(names, in_dir, out_dir):
+    for i in names:
+        img = Image.open(os.path.join(in_dir, i))
         img = img.convert("L")  # 转为灰度图
         img = np.array(img)  # 转为ndarray
-        yield i, img
+        yield i, out_dir, img
 
 
 # 计算灰度共生矩阵(gray-level co-occurrence matrix)
@@ -322,8 +314,8 @@ def get_glcm(img, angle=0, distance=1, gray_levels=256):
 
 
 # 绘制灰度共生矩阵
-def get_glcm_fig(root, angles=[0, 45, 90, 135]):
-    for i, img in get_mat(root):
+def get_glcm_fig(names, in_dir, out_dir, angles=[0, 45, 90, 135]):
+    for i, out, img in get_mat(names, in_dir, out_dir):
         glcms = []  # 存储各角度的 GLCM 图像
         for angle in angles:
             glcm = get_glcm(img, angle=angle)
@@ -351,7 +343,7 @@ def get_glcm_fig(root, angles=[0, 45, 90, 135]):
 
             canvas.paste(glcm, (x_offset, y_offset + title_height))
 
-        canvas.save(f"./output/glcm/{i}")
+        canvas.save(os.path.join(out, i))
 
 
 # 计算局部二值模式(local binary pattern)
@@ -380,22 +372,21 @@ def get_lbp(img):
 
 
 # 绘制局部二值模式
-def get_lbp_fig(root):
-    for i, img in get_mat(root):
+def get_lbp_fig(names, in_dir, out_dir):
+    for i, out, img in get_mat(names, in_dir, out_dir):
         lbp = get_lbp(img)
-        Image.fromarray(lbp.astype(np.uint8)).save(f"./output/lbp/{i}")
+        Image.fromarray(lbp.astype(np.uint8)).save(os.path.join(out, i))
 
 
 def main():
-    roots = [c_name, f_name]
-    for root in roots:
-        get_glcm_fig(root)
-        get_lbp_fig(root)
+    for in_dir in input_dirs:
+        names = os.listdir(in_dir)
+        get_glcm_fig(names, in_dir, f"output/glcm/{in_dir}")
+        get_lbp_fig(names, in_dir, f"output/lbp/{in_dir}")
 
 
 if __name__ == "__main__":
     main()
-
 \end{lstlisting}
 \clearpage
 \chapter{第二次上机实验（垂直平分分类器）}
@@ -434,11 +425,11 @@ $$g(\boldsymbol{x})=(m_{1})^{\prime}(\boldsymbol{x}-(m_{1}-m_{2})/2),$$
 \end{figure}
 \section{实验代码}
 \begin{lstlisting}[language=Python]
+import os
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib as mpl
-import os
 
 mpl.rcParams["font.sans-serif"] = ["SimHei"]  # 中文
 plt.rcParams["axes.unicode_minus"] = False  # 负号
@@ -446,88 +437,92 @@ os.chdir(os.path.dirname(os.path.abspath(__file__)))  # 更改当前工作目录
 
 train_path = "data/train.txt"
 test_path = "data/test.txt"
+output_dir = "output"
 
 
 def train(data):
-    mean = data.groupby("Label").mean()
-    m_1 = mean.loc[1]
-    m_2 = mean.loc[2]
-    point = (m_1 + m_2) / 2
-    slope = m_1 - m_2
-    return point, slope
+    """学习垂直平分线分类器参数，返回类别标签、中点与法向量。"""
+    means = data.groupby("Label").mean()
+    labels = sorted(means.index.tolist())  # 动态取类别，不假设是 1/2
+    m_1, m_2 = means.loc[labels[0]], means.loc[labels[1]]
+    midpoint = (m_1 + m_2) / 2   # 垂直平分线经过的中点
+    normal = m_1 - m_2           # 两簇中心差向量 = 决策线的法向量
+    return labels, midpoint, normal
 
 
-def test(data, point, slope):
+def predict(data, labels, midpoint, normal):
+    """用中点 + 法向量判定每个样本落在决策线的哪一侧。"""
     data["Predict"] = np.where(
-        (data.X - point.X) * slope.X + (data.Y - point.Y) * slope.Y > 0, 1, 2
+        (data.X - midpoint.X) * normal.X + (data.Y - midpoint.Y) * normal.Y > 0,
+        labels[0],
+        labels[1],
     )
-    data.to_csv("output/test_predict.csv")
+    data.to_csv(os.path.join(output_dir, "test_predict.csv"))
     return data
 
 
-def plot(data, point, slope, filename):
+def plot(data, labels, midpoint, normal, filename):
     plt.axline(
-        point,
-        slope=-slope.X / slope.Y,
+        midpoint,
+        slope=-normal.X / normal.Y,
         color="green",
         linewidth=2,
         linestyle="--",
         label="Perpendicular Bisector Classifier",
     )
-    color = ["r", "b"]
+    color_map = {labels[0]: "r", labels[1]: "b"}
     for _, i in data.iterrows():
-        x, y, c = i.iloc[0], i.iloc[1], color[int(i.iloc[2]) - 1]
-        plt.scatter(x, y, color=c)
+        x, y, label = i.iloc[0], i.iloc[1], i.iloc[2]
+        plt.scatter(x, y, color=color_map[label])
     plt.xlim(-8, 8)
     plt.ylim(-8, 8)
     plt.axis("off")
     plt.savefig(filename, dpi=300, bbox_inches="tight")
-    # plt.show()
     plt.close()
 
 
-def evaluate(data):
-    TP = 0
-    TN = 0
-    FP = 0
-    FN = 0
+def evaluate(data, positive_label):
+    """计算分类指标，防止分母为 0 时崩溃。"""
+    TP = TN = FP = FN = 0
     for _, i in data.iterrows():
-        if i.iloc[2] == i.iloc[3]:
-            if i.iloc[2] == 1:
+        actual, pred = i.iloc[2], i.iloc[3]
+        if actual == pred:
+            if actual == positive_label:
                 TP += 1
             else:
                 TN += 1
         else:
-            if i.iloc[2] == 1:
+            if actual == positive_label:
                 FP += 1
             else:
                 FN += 1
-    accuracy = (TP + TN) / (TP + TN + FP + FN)
-    precision = TP / (TP + FP)
-    recall = TP / (TP + FN)
-    F1 = 2 * precision * recall / (precision + recall)
-    print("accuracy:", accuracy)
-    print("precision:", precision)
-    print("recall:", recall)
-    print("F1 score:", F1)
+    total = TP + TN + FP + FN
+    accuracy = (TP + TN) / total if total else 0.0
+    precision = TP / (TP + FP) if (TP + FP) else 0.0
+    recall = TP / (TP + FN) if (TP + FN) else 0.0
+    f1 = 2 * precision * recall / (precision + recall) if (precision + recall) else 0.0
+    print(f"accuracy:  {accuracy:.4f}")
+    print(f"precision: {precision:.4f}")
+    print(f"recall:    {recall:.4f}")
+    print(f"F1 score:  {f1:.4f}")
 
 
 def main():
+    os.makedirs(output_dir, exist_ok=True)
     train_data = pd.read_csv(train_path, index_col=0)
     test_data = pd.read_csv(test_path, index_col=0)
-    point, slope = train(train_data)
-    # 绘制测试集与决策界
-    plot(train_data, point, slope, "./output/train.png")
+    labels, midpoint, normal = train(train_data)
     # 绘制训练集与决策界
-    plot(test_data, point, slope, "./output/test.png")
-    test_data = test(test_data, point, slope)
+    plot(train_data, labels, midpoint, normal, os.path.join(output_dir, "train.png"))
+    # 绘制测试集与决策界
+    plot(test_data, labels, midpoint, normal, os.path.join(output_dir, "test.png"))
+    test_data = predict(test_data, labels, midpoint, normal)
     # 评估测试结果
-    evaluate(test_data)
+    evaluate(test_data, labels[0])
 
 
 if __name__ == "__main__":
     main()
-
 \end{lstlisting}
 \clearpage
 \chapter{第三次上机实验（使用朴素贝叶斯方法进行预测）}
@@ -589,20 +584,31 @@ def keyword_extract(path="train.csv"):
     return keywords
 
 
-def Pre_Process(path, keywords):
-    df = pd.read_csv(path)
-
-    # 将Category进行整数编码
+def build_encoder(df):
+    """在训练集上学习类别编码，返回共享的标签编码器与 one-hot 规范列名。"""
     encoder = preprocessing.LabelEncoder()
-    crime_type_encode = encoder.fit_transform(df["Category"])
+    encoder.fit(df["Category"])
 
-    # 将时间进行one-hot编码
-    hour = pd.to_datetime(df["Dates"]).dt.hour
-    hour = pd.get_dummies(hour)
-    day = pd.get_dummies(df["DayOfWeek"])
+    hour_cols = pd.get_dummies(pd.to_datetime(df["Dates"]).dt.hour).columns
+    day_cols = pd.get_dummies(df["DayOfWeek"]).columns
+    district_cols = pd.get_dummies(df["PdDistrict"]).columns
+    return encoder, hour_cols, day_cols, district_cols
 
-    # 将所属警区进行one-hot编码
-    police_district = pd.get_dummies(df["PdDistrict"])
+
+def Pre_Process(df, keywords, encoder, hour_cols, day_cols, district_cols):
+    # 标签编码：用训练集拟合好的编码器 transform（不再重新 fit，保证映射一致）
+    crime_type_encode = encoder.transform(df["Category"])
+
+    # one-hot 编码后按训练集列结构对齐（test 缺失的类别补 0，多余的丢弃）
+    hour = pd.get_dummies(pd.to_datetime(df["Dates"]).dt.hour).reindex(
+        columns=hour_cols, fill_value=0
+    )
+    day = pd.get_dummies(df["DayOfWeek"]).reindex(
+        columns=day_cols, fill_value=0
+    )
+    police_district = pd.get_dummies(df["PdDistrict"]).reindex(
+        columns=district_cols, fill_value=0
+    )
 
     # 利用 TF-IDF 特征进行编码
     matrix = pd.DataFrame(0, index=df.index, columns=keywords)
@@ -620,11 +626,19 @@ def Pre_Process(path, keywords):
     return data
 
 
+train_df = pd.read_csv(train_path)
+test_df = pd.read_csv(test_path)
 keywords = keyword_extract()
+encoder, hour_cols, day_cols, district_cols = build_encoder(train_df)
+
 acc = []
 for k in range(0, len(keywords) + 1):
-    train = Pre_Process(train_path, keywords[:k])
-    test = Pre_Process(test_path, keywords[:k])
+    train = Pre_Process(
+        train_df, keywords[:k], encoder, hour_cols, day_cols, district_cols
+    )
+    test = Pre_Process(
+        test_df, keywords[:k], encoder, hour_cols, day_cols, district_cols
+    )
     # 训练模型
     model = BernoulliNB()
     model.fit(train.drop("Crime type", axis=1), train["Crime type"])
@@ -714,20 +728,31 @@ def keyword_extract(path="train.csv"):
     return keywords
 
 
-def Pre_Process(path, keywords):
-    df = pd.read_csv(path)
-
-    # 将Category进行整数编码
+def build_encoder(df):
+    """在训练集上学习类别编码，返回共享的标签编码器与 one-hot 规范列名。"""
     encoder = preprocessing.LabelEncoder()
-    crime_type_encode = encoder.fit_transform(df["Category"])
+    encoder.fit(df["Category"])
 
-    # 将时间进行one-hot编码
-    hour = pd.to_datetime(df["Dates"]).dt.hour
-    hour = pd.get_dummies(hour)
-    day = pd.get_dummies(df["DayOfWeek"])
+    hour_cols = pd.get_dummies(pd.to_datetime(df["Dates"]).dt.hour).columns
+    day_cols = pd.get_dummies(df["DayOfWeek"]).columns
+    district_cols = pd.get_dummies(df["PdDistrict"]).columns
+    return encoder, hour_cols, day_cols, district_cols
 
-    # 将所属警区进行one-hot编码
-    police_district = pd.get_dummies(df["PdDistrict"])
+
+def Pre_Process(df, keywords, encoder, hour_cols, day_cols, district_cols):
+    # 标签编码：用训练集拟合好的编码器 transform（不再重新 fit，保证映射一致）
+    crime_type_encode = encoder.transform(df["Category"])
+
+    # one-hot 编码后按训练集列结构对齐（test 缺失的类别补 0，多余的丢弃）
+    hour = pd.get_dummies(pd.to_datetime(df["Dates"]).dt.hour).reindex(
+        columns=hour_cols, fill_value=0
+    )
+    day = pd.get_dummies(df["DayOfWeek"]).reindex(
+        columns=day_cols, fill_value=0
+    )
+    police_district = pd.get_dummies(df["PdDistrict"]).reindex(
+        columns=district_cols, fill_value=0
+    )
 
     # 利用 TF-IDF 特征进行编码
     matrix = pd.DataFrame(0, index=df.index, columns=keywords)
@@ -745,12 +770,20 @@ def Pre_Process(path, keywords):
     return data
 
 
+train_df = pd.read_csv(train_path)
+test_df = pd.read_csv(test_path)
 keywords = keyword_extract()
+encoder, hour_cols, day_cols, district_cols = build_encoder(train_df)
+
 acc = []
 depth = []
 for k in range(0, len(keywords) + 1):
-    train = Pre_Process(train_path, keywords[:k])
-    test = Pre_Process(test_path, keywords[:k])
+    train = Pre_Process(
+        train_df, keywords[:k], encoder, hour_cols, day_cols, district_cols
+    )
+    test = Pre_Process(
+        test_df, keywords[:k], encoder, hour_cols, day_cols, district_cols
+    )
     # 训练模型
     model = DecisionTreeClassifier()
     model.fit(train.drop("Crime type", axis=1), train["Crime type"])
@@ -783,11 +816,10 @@ plot_tree(
     model,
     filled=True,
     rounded=True,
-    class_names=list(pd.read_csv(train_path)["Category"].unique()),
+    class_names=list(train_df["Category"].unique()),
     feature_names=list(train.drop("Crime type", axis=1).columns),
 )
 plt.savefig("decision_tree.png")
-
 \end{lstlisting}
 \clearpage
 \chapter{第五次上机实验（信用卡欺诈预测）}
@@ -858,17 +890,12 @@ os.chdir(os.path.dirname(os.path.abspath(__file__)))  # 更改当前工作目录
 train_path = "train.csv"
 test_path = "test.csv"
 
-train = pd.read_csv(train_path, index_col=0)
-test = pd.read_csv(test_path, index_col=0)
-
 
 def Pre_process(path):
+    """读取数据，返回原始特征 X 和标签 y（不做归一化）。"""
     data = pd.read_csv(path, index_col=0)
     X = data.drop("Class", axis=1).values
     y = data["Class"].values
-    X = scaler.fit_transform(X)
-    X = torch.from_numpy(X).float()
-    y = torch.from_numpy(y).long()
     return X, y
 
 
@@ -888,6 +915,16 @@ class BpNet(nn.Module):
 scaler = StandardScaler()
 X_train, y_train = Pre_process(train_path)
 X_test, y_test = Pre_process(test_path)
+
+# 归一化：只在训练集上 fit（学习均值/方差），测试集仅 transform（沿用训练集统计量）
+# 避免测试集的统计量泄漏进评估，保证指标反映真实泛化能力
+X_train = scaler.fit_transform(X_train)
+X_test = scaler.transform(X_test)
+
+X_train = torch.from_numpy(X_train).float()
+y_train = torch.from_numpy(y_train).long()
+X_test = torch.from_numpy(X_test).float()
+y_test = torch.from_numpy(y_test).long()
 
 seed = 233
 epochs = 100
@@ -926,7 +963,6 @@ plt.ylabel("Precision")
 plt.legend(loc="best")
 # plt.show()
 plt.savefig("auc.png")
-
 \end{lstlisting}
 \printbibliography
 
