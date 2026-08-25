@@ -15,3 +15,9 @@ datasets/exp5/auc.png
 
 # 飞机检测输出
 datasets/final/飞机检测/detected_aircraft_*.jpg
+
+# LaTeX 编译辅助文件（report.pdf 保留入库）
+demos/*.aux
+demos/*.log
+demos/*.out
+demos/*.toc

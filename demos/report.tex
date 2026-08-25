@@ -1,7 +1,7 @@
 \documentclass[a4paper,12pt]{report}
 % 报告标题（页眉使用，修改只需改这一处）
 \newcommand{\reporttitle}{数据挖掘实验报告}
-\usepackage[margin=1in]{geometry} % to change the page dimensions
+\usepackage[margin=1in,headheight=15pt]{geometry} % to change the page dimensions
 \usepackage{ctex}
 \usepackage{xeCJK}
 \usepackage{amsmath}
@@ -20,7 +20,10 @@
 %\usepackage[top=30mm,bottom=30mm,left=20mm,right=20mm]{geometry}
 %\usepackage{cite}
 %\usepackage{courier}
-\setmonofont{Courier New}
+% 等宽字体：优先 Courier New（Windows），否则回退到 DejaVu Sans Mono（Linux/macOS）
+\IfFontExistsTF{Courier New}
+  {\setmonofont{Courier New}}
+  {\setmonofont{DejaVu Sans Mono}}
 \usepackage{listings}
 \lstset{tabsize=4, keepspaces=true,
     xleftmargin=2em,xrightmargin=0em, aboveskip=1em,
@@ -46,6 +49,7 @@
 \newtheorem{corollary}{推论}
 \newtheorem{example}{例}
 \usepackage{amsfonts}
+\usepackage{array} % \extrarowheight（封面表格行高）
 %\usepackage{bm}
 % These packages are all incorporated in the memoir class to one degree or another...
 \usepackage{hyperref}
@@ -93,7 +97,7 @@
 \begin{titlepage}
     \begin{center}
         
-    \includegraphics[width=0.60\textwidth]{nk_logo.pdf}\\
+    \includegraphics[width=0.60\textwidth]{figures/nk_logo.pdf}\\
     \vspace{10mm}
     \hspace*{\fill} \\
     \textbf{\zihao{1}{数据挖掘实验报告}}\\
